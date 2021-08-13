@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #f2eee8;
+}
+
+.arrow-right {
+  display: none;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-top: 60px;
+  border-bottom: 1px solid rgba(52, 52, 46, 0.1);
+  padding-bottom: 35px;
+}
+
+.nav-container > div {
+  display: flex;
+  margin-left: 5%;
+}
+
+.nav-container-links {
+  display: flex;
+  justify-content: center;
+  width: 65%;
+}
+
+.nav-container > div > a {
+  text-decoration: none;
+  color: #34342e;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 14px;
+  font-family: "GT America";
+  font-weight: normal;
+  margin-right: 30px;
+  text-align: center;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 70px;
+}
+
+.contacts > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.address {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: "GT America";
+  font-weight: normal;
+}
+
+.contacts > div > div {
+  color: #34342e;
+  margin-left: 20px;
+  font-size: 14px;
+  font-family: "GT America";
+  font-weight: normal;
+}
+
+.copyright {
+  color: #c19a5b;
+  font-size: 18px;
+  margin-bottom: 40px;
+  font-family: "Playfair Display", serif;
+}
+
+.more-works {
+  font-family: "GT America";
+  font-weight: normal;
+  font-size: 14px;
+  color: #34342e;
+  margin-top: 100px;
+}
+
+.gallery {
+  font-family: "Playfair Display", serif;
+  font-size: 85px;
+  color: #c19a5b;
+  padding: 5px;
+  border-bottom: 1px solid #c19a5b;
+  margin-bottom: 150px;
+}
+
+@media screen and (max-width: 1080px) {
+  .nav-container > div > a {
+    font-size: 12px;
+  }
+  .contacts > div > div {
+    font-size: 12px;
+  }
+  .copyright {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .nav-container {
+    width: 98%;
+  }
+  .gallery {
+    font-size: 60px;
+    margin-bottom: 120px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .more-works {
+    font-family: "GT America";
+    font-weight: normal;
+    font-size: 14px;
+    color: #34342e;
+    margin-top: 100px;
+  }
+  .gallery {
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .nav-container {
+    flex-direction: column;
+    border: none;
+    padding-bottom: 0px;
+  }
+  .nav-container-links {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 15px;
+    border-bottom: 1px solid rgba(52, 52, 46, 0.1);
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+  }
+  .nav-container-links > a {
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgba(52, 52, 46, 0.1);
+  }
+  .arrow-right {
+    display: flex;
+  }
+  .contacts {
+    flex-direction: column;
+    width: 90%;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-top: 1px solid rgba(52, 52, 46, 0.1);
+    border-bottom: 1px solid rgba(52, 52, 46, 0.1);
+  }
+  .contacts > div {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .copyright {
+    text-align: center;
+    margin: 20px;
+  }
+}

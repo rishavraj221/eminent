@@ -1,0 +1,205 @@
+{
+  "Main": {
+    "slider": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "slider_image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Slider Image"
+            }
+          },
+          "image_title": {
+            "type": "StructuredText",
+            "config": {
+              "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+              "label": "Image Title"
+            }
+          },
+          "designed_by": {
+            "type": "Text",
+            "config": {
+              "label": "Designed By"
+            }
+          }
+        },
+        "label": "Slider"
+      }
+    },
+    "what_we_offer": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "service_image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Service Image"
+            }
+          },
+          "service_title": {
+            "type": "StructuredText",
+            "config": {
+              "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+              "label": "Service Title"
+            }
+          },
+          "service_descriptioin": {
+            "type": "Text",
+            "config": {
+              "label": "Service_descriptioin"
+            }
+          }
+        },
+        "label": "What We Offer"
+      }
+    },
+    "about_eminent_desc": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image_1": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Image 1"
+            }
+          },
+          "image_2": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Image 2"
+            }
+          },
+          "description": {
+            "type": "Text",
+            "config": {
+              "label": "Description"
+            }
+          }
+        },
+        "label": "About Eminent Desc"
+      }
+    },
+    "authors": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "image"
+            }
+          },
+          "name": {
+            "type": "StructuredText",
+            "config": {
+              "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+              "label": "name"
+            }
+          },
+          "job_type": {
+            "type": "Text",
+            "config": {
+              "label": "Job Type"
+            }
+          },
+          "about": {
+            "type": "Text",
+            "config": {
+              "label": "about"
+            }
+          },
+          "discover_more_endpoint": {
+            "type": "Text",
+            "config": {
+              "label": "Discover more endpoint"
+            }
+          }
+        },
+        "label": "authors"
+      }
+    },
+    "team_members": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "image"
+            }
+          },
+          "full_name": {
+            "type": "StructuredText",
+            "config": {
+              "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+              "label": "Full Name"
+            }
+          },
+          "role": {
+            "type": "Text",
+            "config": {
+              "label": "Role"
+            }
+          }
+        },
+        "label": "Team Members"
+      }
+    },
+    "quotes": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "quote": {
+            "type": "Text",
+            "config": {
+              "label": "Quote"
+            }
+          }
+        },
+        "label": "Quotes"
+      }
+    },
+    "featured_projects": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Image"
+            }
+          },
+          "project_name": {
+            "type": "StructuredText",
+            "config": {
+              "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+              "label": "Project Name"
+            }
+          },
+          "location": {
+            "type": "Text",
+            "config": {
+              "label": "Location"
+            }
+          }
+        },
+        "label": "Featured Projects"
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "env-cmd -f .env.development gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "@date-io/date-fns": "^2.11.0",
+    "@emotion/core": "^11.0.0",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@material-ui/pickers": "^3.3.10",
+    "bootstrap": "^5.0.2",
+    "env-cmd": "^10.1.0",
+    "formik": "^2.2.9",
+    "formik-material-ui": "^3.0.1",
+    "gatsby": "^3.10.1",
+    "gatsby-awesome-pagination": "^0.3.8",
+    "gatsby-plugin-image": "^1.10.1",
+    "gatsby-plugin-react-helmet": "^4.10.0",
+    "gatsby-plugin-sass": "^4.10.0",
+    "gatsby-plugin-sharp": "^3.10.2",
+    "gatsby-remark-images": "^5.7.0",
+    "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-source-filesystem": "^3.10.0",
+    "gatsby-source-prismic": "^4.0.2",
+    "gatsby-source-prismic-graphql": "^3.6.2",
+    "gatsby-transformer-remark": "^4.7.0",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.6.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-multi-carousel": "^2.6.3",
+    "react-responsive-carousel": "^3.2.20",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "prettier": "2.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

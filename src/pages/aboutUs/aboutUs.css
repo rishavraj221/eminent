@@ -1,0 +1,559 @@
+.about-us-hero-container {
+  width: 100%;
+  background-color: #f2eee8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 140px;
+}
+.about-us-head-small {
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  margin-top: 120px;
+}
+.about-us-head {
+  font-family: Ivar Display;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  font-size: 90px;
+  line-height: 80px;
+  margin-top: 32px;
+}
+.au-head-2 {
+  margin-top: 0px;
+}
+.au-head-3 {
+  margin-top: 0px;
+}
+.about-us-head-2 {
+  font-family: haigrast;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  font-size: 120px;
+  line-height: 120px;
+  color: #c19a5b;
+}
+.about-us-hero-container-2 {
+  width: 100%;
+  display: flex;
+  margin-top: 80px;
+}
+.about-us-hero-image {
+  width: 636px;
+  height: 636px;
+  margin-right: 96px;
+}
+.about-us-hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-us-hero-content-quote {
+  font-family: GT America;
+  width: 552px;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 170%;
+}
+.our-mission-head {
+  font-family: Ivar Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 80px;
+  margin-top: 140px;
+}
+.our-mission-container {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  margin-top: 120px;
+}
+.our-mission-content {
+  width: 50%;
+  margin-right: 10%;
+}
+.our-mission-content > ul {
+  margin-top: 24px;
+  list-style: none;
+}
+.our-mission-content > ul li::before {
+  content: "\2022";
+  color: #34342e;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.our-mission-content > ul > li {
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  margin-top: 16px;
+}
+.our-mission-quote {
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  margin-top: 30px;
+}
+.our-team-head {
+  margin-top: 180px;
+}
+.our-team-head-2 {
+  font-family: haigrast;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 80px;
+  color: #c19a5b;
+  margin-top: -12px;
+}
+.our-team-owner {
+  text-decoration: none;
+  color: #34342e;
+}
+.our-team-owner-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #34342e;
+}
+.our-team-owner-link:hover {
+  opacity: 0.9;
+  color: #34342e;
+}
+.our-team-owners-container {
+  display: flex;
+  width: 80%;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+.our-team-owner-name {
+  font-family: Ivar Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 170%;
+  margin-top: 24px;
+}
+.about-us-team-members-container {
+  width: 80%;
+  margin-top: 40px;
+}
+.about-us-team-members-inside-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.page-bottom-padding {
+  width: 100%;
+  height: 120px;
+}
+.brandi-hagen-hero-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brandi-hagen-quote-container {
+  width: 268px;
+  margin-left: 5%;
+}
+.bh-quote-head {
+  font-family: Ivar Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 170%;
+}
+.bh-quote-body {
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  opacity: 0.8;
+  margin-top: 40px;
+}
+.bh-hero-image {
+  width: 26%;
+}
+.brandi-hagen-hero-mobile-container {
+  display: none;
+  flex-direction: column;
+  margin-top: 60px;
+  width: 100%;
+  align-items: center;
+}
+.bh-bio-container {
+  width: 100%;
+  margin-top: 140px;
+  display: flex;
+}
+.bh-image-2-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.bh-image-2 {
+  width: 456px;
+  height: 702px;
+}
+.bh-bio-content-container {
+  width: 384px;
+  margin-left: 5%;
+}
+.bh-bio-title {
+  width: 384px;
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  margin-top: 30px;
+  opacity: 0.8;
+}
+.bh-awards-head {
+  margin-top: 32px;
+  font-family: Ivar Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 170%;
+}
+.bh-awards-container {
+  margin-top: 16px;
+  list-style: none;
+}
+.bh-award::before {
+  content: "\2022";
+  color: #34342e;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.bh-award {
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  opacity: 0.8;
+}
+.bh-volunteerism-title {
+  margin-top: 16px;
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  opacity: 0.8;
+}
+.spotlight-header-2 {
+  margin-top: 0px;
+  font-family: Ivar Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .about-us-hero-container {
+    padding-bottom: 80px;
+  }
+  .about-us-head-small {
+    font-size: 12px;
+    line-height: 20.4px;
+    margin-top: 100px;
+  }
+  .about-us-head {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 24px;
+  }
+  .au-head-2 {
+    margin-top: 0px;
+  }
+  .au-head-3 {
+    margin-top: 0px;
+  }
+  .about-us-head-2 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .about-us-hero-container-2 {
+    margin-top: 60px;
+  }
+  .about-us-hero-image {
+    width: 360px;
+    height: 360px;
+    margin-right: 69px;
+  }
+  .about-us-hero-content {
+    justify-content: flex-start;
+  }
+  .about-us-hero-content-quote {
+    width: 375px;
+    margin-top: 25px;
+    font-size: 12px;
+    line-height: 20.4px;
+  }
+  .our-mission-head {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 120px;
+  }
+  .our-mission-container {
+    width: 95%;
+    margin-top: 80px;
+  }
+  .our-mission-content {
+    width: 45%;
+    margin-right: 5%;
+  }
+  .our-mission-image {
+    width: 375px;
+  }
+  .our-mission-content > ul {
+    margin-top: 12px;
+  }
+  .our-mission-content > ul > li {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .our-mission-quote {
+    font-size: 12px;
+    line-height: 170%;
+    margin-top: 25px;
+  }
+  .our-team-head {
+    margin-top: 140px;
+  }
+  .our-team-head-2 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: -12px;
+  }
+  .our-team-owners-container {
+    width: 95%;
+    margin-top: 60px;
+  }
+  .our-team-owner-image {
+    max-width: 90%;
+  }
+  .our-team-owner-name {
+    font-size: 22px;
+    line-height: 170%;
+    margin-top: 20px;
+  }
+  .about-us-team-members-container {
+    width: 95%;
+    margin-top: 32px;
+  }
+  .page-bottom-padding {
+    height: 100px;
+  }
+  .brandi-hagen-quote-container {
+    width: 218px;
+    margin-left: 2.5%;
+  }
+  .bh-quote-head {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .bh-quote-body {
+    font-size: 12px;
+    margin-top: 32px;
+  }
+  .bh-bio-container {
+    margin-top: 100px;
+  }
+  .bh-image-2-container {
+    width: 45%;
+  }
+  .bh-image-2 {
+    max-width: 340px;
+    max-height: 524px;
+  }
+  .bh-bio-content-container {
+    width: 340px;
+    margin-left: 4%;
+  }
+  .bh-bio-title {
+    font-size: 12px;
+    margin-top: 25px;
+  }
+  .bh-awards-head {
+    margin-top: 24px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .bh-award {
+    font-size: 12px;
+  }
+  .bh-volunteerism-title {
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  .spotlight-header-2 {
+    margin-top: 0px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-us-hero-container {
+    padding-bottom: 60px;
+  }
+  .about-us-head-small {
+    margin-top: 60px;
+  }
+  .about-us-head {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+  .au-head-2 {
+    margin-top: 0px;
+  }
+  .au-head-3 {
+    margin-top: 0px;
+  }
+  .about-us-head-2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .about-us-hero-container-2 {
+    flex-direction: column;
+  }
+  .about-us-hero-image {
+    width: 100%;
+    overflow: hidden;
+    margin-right: 0px;
+  }
+  .about-us-hero-content {
+    justify-content: flex-start;
+    margin-top: 50px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  .about-us-hero-content-quote {
+    width: 95%;
+  }
+  .our-mission-head {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 80px;
+  }
+  .our-mission-image {
+    width: 100%;
+  }
+  .our-mission-container {
+    width: 95%;
+    margin-top: 40px;
+    flex-direction: column-reverse;
+  }
+  .our-mission-content {
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 32px;
+  }
+  .our-team-head {
+    margin-top: 80px;
+  }
+  .our-team-head-2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: -10px;
+  }
+  .our-team-owners-container {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .our-team-owner-image {
+    width: 100%;
+  }
+  .our-team-owner-name {
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 16px;
+  }
+  .page-bottom-padding {
+    height: 80px;
+  }
+  .about-us-team-members-container {
+    width: 95%;
+    margin-top: 32px;
+    overflow: scroll;
+    white-space: nowrap;
+  }
+  .about-us-team-members-inside-container {
+    width: 774px;
+  }
+  .brandi-hagen-hero-container {
+    display: none;
+  }
+  .brandi-hagen-hero-mobile-container {
+    display: flex;
+  }
+  .bh-hero-image {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .bh-hero-image > div {
+    display: flex;
+  }
+  .brandi-hagen-quote-container {
+    margin-top: 40px;
+    width: 95%;
+    margin-left: 2.5%;
+  }
+  .bh-bio-container {
+    margin-top: 120px;
+    flex-direction: column;
+    margin-left: 5%;
+  }
+  .bh-image-2-container {
+    width: 95%;
+    justify-content: center;
+  }
+  .bh-image-2 {
+    max-width: 100%;
+  }
+  .bh-bio-content-container {
+    width: 95%;
+    margin-left: 0px;
+    margin-top: 32px;
+  }
+  .bh-bio-title {
+    line-height: 20.4px;
+    margin-top: 25px;
+    width: 100%;
+  }
+  .bh-awards-head {
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .bh-volunteerism-title {
+    margin-top: 12px;
+  }
+  .spotlight-header-2 {
+    margin-top: 0px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+}

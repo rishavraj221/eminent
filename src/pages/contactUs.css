@@ -1,0 +1,236 @@
+.contact-us-head-text {
+  width: 80%;
+  margin-top: 140px;
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+}
+.contact-us-head {
+  width: 80%;
+  margin-top: 32px;
+  font-family: Ivar Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 80px;
+}
+.head-b {
+  width: 467px;
+  margin-top: 0px;
+  padding-left: -40%;
+}
+.contact-us-head-c {
+  margin-top: -27px;
+  color: #c19a5b;
+  font-family: haigrast;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 120px;
+  line-height: 120px;
+}
+.contact-info-container {
+  width: 80%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-head {
+  font-family: GT America;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 170%;
+}
+.contact-info {
+  margin-top: 8px;
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+}
+.follow-us-links {
+  margin-top: 32px;
+}
+.link-to-google-map {
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  margin-top: 16px;
+  color: #c19a5b;
+}
+.social-media-link {
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  margin-right: 20px;
+  color: #c19a5b;
+}
+.follow-us-links-mobile {
+  display: none;
+}
+.contact-form-container {
+  width: 100%;
+  margin-top: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form-text {
+  font-family: Ivar Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+.contact-form-field {
+  width: 408px;
+  height: 55px;
+}
+.submit-form-button {
+  border: 1px solid #34342e;
+  width: 408px;
+  height: 55px;
+  margin-top: 70px;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+.submit-form-button:hover {
+  border: 2px solid #34342e;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-us-head-text {
+    width: 95%;
+    margin-top: 120px;
+    font-size: 12px;
+    line-height: 170%;
+  }
+  .contact-us-head {
+    width: 95%;
+    margin-top: 24px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .head-b {
+    width: 311px;
+    margin-top: 0px;
+  }
+  .contact-us-head-c {
+    margin-top: -30px;
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .contact-info-container {
+    width: 95%;
+  }
+  .contact-head {
+    font-size: 12px;
+    line-height: 170%;
+  }
+  .contact-info {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 170%;
+  }
+  .link-to-google-map {
+    font-size: 12px;
+    line-height: 170%;
+    margin-top: 12px;
+  }
+  .social-media-link {
+    font-size: 12px;
+    line-height: 170%;
+    margin-right: 32px;
+  }
+  .contact-form-container {
+    margin-top: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .contact-form-text {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+  .contact-form-field {
+    width: 375px;
+    height: 48px;
+  }
+  .submit-form-button {
+    width: 375px;
+    height: 48px;
+    font-size: 12px;
+    line-height: 150%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-us-head-text {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  .contact-us-head {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .head-b {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .contact-us-head-c {
+    margin-top: -8px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .contact-info-container {
+    width: 95%;
+    flex-direction: column;
+  }
+  .contact-single-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .follow-us-links-big-screen {
+    display: none;
+  }
+  .follow-us-links-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form-container {
+    margin-top: 80px;
+  }
+  .contact-form-field {
+    width: 290px;
+    height: 44px;
+  }
+  .submit-form-button {
+    width: 290px;
+    height: 44px;
+  }
+}

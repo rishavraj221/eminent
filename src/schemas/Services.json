@@ -1,0 +1,70 @@
+{
+  "Main": {
+    "hero_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Hero Image"
+      }
+    },
+    "services": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Image"
+            }
+          },
+          "service_title": {
+            "type": "StructuredText",
+            "config": {
+              "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+              "label": "Service Title"
+            }
+          },
+          "endpoint": {
+            "type": "Text",
+            "config": {
+              "label": "EndPoint"
+            }
+          }
+        },
+        "label": "Services"
+      }
+    },
+    "spotlights": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Image"
+            }
+          },
+          "title": {
+            "type": "StructuredText",
+            "config": {
+              "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+              "label": "Title"
+            }
+          },
+          "location": {
+            "type": "Text",
+            "config": {
+              "label": "Location"
+            }
+          }
+        },
+        "label": "Spotlights"
+      }
+    }
+  }
+}

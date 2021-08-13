@@ -1,0 +1,641 @@
+.hero-div {
+  width: 100%;
+  background-color: #f2eee8;
+  height: 1050px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-head-title {
+  font-family: Ivar Display;
+  color: #34342e;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 80px;
+}
+.hero-head-title2 {
+  font-family: haigrast;
+  color: #c19a5b;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 80px;
+  margin-top: -12px;
+}
+.interior {
+  margin-top: 140px;
+  margin-right: 300px;
+}
+.furnishings {
+  margin-top: 140px;
+}
+.desc {
+  width: 360px;
+  margin-top: 40px;
+}
+.quote-credit {
+  display: flex;
+  align-items: center;
+}
+.dash-tablet {
+  display: none;
+}
+.dash-mobile {
+  display: none;
+}
+.credit-title {
+  margin-left: 16px;
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  color: #c19a5b;
+}
+.page-head-desc {
+  margin-top: 40px;
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+  color: #34342e;
+  text-align: justify;
+}
+.hero-image-container {
+  display: flex;
+}
+.hero-image-1 {
+  width: 864px;
+  height: 480px;
+  margin-top: -320px;
+}
+.hero-image-2 {
+  width: 360px;
+  height: 458px;
+  margin-top: -155px;
+  margin-left: -96px;
+}
+.hero-image-3 {
+  position: absolute;
+  width: 252px;
+  height: 308px;
+  right: 0;
+  bottom: 0px;
+}
+.head-2 {
+  margin-top: 160px;
+  width: 941px;
+  text-align: center;
+  color: #34342e;
+  font-family: Ivar Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 80px;
+}
+.head-kitchen {
+  margin-right: 250px;
+}
+.head-areas {
+  margin-top: 0px;
+  margin-left: 250px;
+  text-align: left;
+}
+.head-furnishing-1 {
+  margin-right: 550px;
+}
+.head-furnishing-2 {
+  margin-top: 0px;
+}
+.head-2-desc {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 648px;
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+}
+.head-3 {
+  font-family: Ivar Display;
+  width: 744px;
+  margin-top: 140px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 50px;
+}
+.head-3-desc {
+  font-family: GT America;
+  width: 600px;
+  margin-top: 40px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+}
+.services-service-card {
+  margin-top: 100px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.service-card-reverse {
+  flex-direction: row-reverse;
+}
+.service-info {
+  width: 50%;
+}
+.service-info-reverse {
+  display: flex;
+  margin-left: 7%;
+  flex-direction: column;
+}
+.service-image {
+  width: 50%;
+}
+.service-image-reverse {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.other-info {
+  display: flex;
+  align-items: center;
+}
+.other-text {
+  margin-left: 16px;
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  color: #c19a5b;
+}
+.service-card-title {
+  margin-top: 20px;
+  font-family: Ivar Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 50px;
+}
+.service-desc {
+  margin-top: 40px;
+  width: 408px;
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+}
+.service-description {
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  width: 648px;
+  font-size: 18px;
+  line-height: 170%;
+  text-align: center;
+}
+.kitchen-service {
+  width: 90%;
+  display: flex;
+  margin-top: 90px;
+}
+.kitchen-service-images-container {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 50px;
+}
+.kitchen-service-image {
+  margin-top: 50px;
+}
+.kitchen-service-content {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+.kitchen-service-content-head {
+  font-family: Ivar Display;
+  width: 384px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 170%;
+  margin-top: 50px;
+}
+.kitchen-service-content-body {
+  font-family: GT America;
+  width: 384px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  margin-top: 20px;
+}
+.kitchen-service-content-mobile {
+  display: none;
+}
+.image-comment-desktop {
+  margin-top: 150px;
+  margin-bottom: 140px;
+  width: 90%;
+  max-width: 1128px;
+  height: 739px;
+}
+.image-comment-tablet {
+  display: none;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  width: 95%;
+  max-width: 774px;
+  height: 500px;
+}
+.image-comment-mobile {
+  display: none;
+  width: 290px;
+  height: 390px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.head-2-cp-1 {
+  margin-right: 400px;
+}
+.head-2-cp-2 {
+  margin-top: 0px;
+  margin-right: 160px;
+}
+.head-2-cp-3 {
+  margin-top: 0px;
+  margin-right: 160px;
+}
+.head-2-cp-4 {
+  margin-top: 0px;
+  margin-left: 160px;
+}
+.furnishing-carousel {
+  margin-top: 60px;
+  margin-bottom: 120px;
+  width: 70%;
+}
+.furnishing-carousel .react-multi-carousel-track {
+  margin-left: 100px;
+}
+.furnishing-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 1241px) {
+  .hero-div {
+    height: 770px;
+  }
+  .hero-head-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .hero-head-title2 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: -9px;
+  }
+  .interior {
+    margin-top: 100px;
+    margin-right: 150px;
+  }
+  .furnishings {
+    margin-top: 100px;
+  }
+  .dash-desktop {
+    display: none;
+  }
+  .dash-tablet {
+    display: flex;
+  }
+  .desc {
+    width: 268px;
+  }
+  .credit-title {
+    font-size: 12px;
+  }
+  .page-head-desc {
+    font-size: 14px;
+  }
+  .hero-image-1 {
+    width: 550px;
+    height: 295px;
+    margin-top: -225px;
+  }
+  .hero-image-2 {
+    width: 250px;
+    height: 325px;
+    margin-top: -125px;
+    margin-left: -76px;
+  }
+  .hero-image-3 {
+    display: none;
+  }
+  .head-2 {
+    margin-top: 120px;
+    width: 590px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .head-kitchen {
+    margin-right: 20%;
+  }
+  .head-areas {
+    margin-top: 0px;
+    margin-left: 10%;
+    width: 80%;
+  }
+  .head-furnishing-1 {
+    margin-right: 350px;
+  }
+  .head-furnishing-2 {
+    margin-top: 0px;
+  }
+  .head-2-desc {
+    margin-top: 24px;
+    margin-bottom: 20px;
+    width: 574px;
+    font-size: 14px;
+    line-height: 170%;
+  }
+  .head-3 {
+    width: 574px;
+    margin-top: 100px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .head-3-desc {
+    width: 474px;
+    margin-top: 24px;
+    font-size: 12px;
+  }
+  .services-service-card {
+    margin-top: 80px;
+    width: 90%;
+  }
+  .other-text {
+    font-size: 12px;
+    line-height: 20.4px;
+  }
+  .service-card-title {
+    margin-top: 16px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .service-desc {
+    margin-top: 24px;
+    width: 275px;
+    font-size: 12px;
+    line-height: 20.4px;
+  }
+  .service-description {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 574px;
+    font-size: 14px;
+  }
+  .kitchen-service {
+    width: 95%;
+    margin-top: 68px;
+  }
+  .kitchen-service-images-container {
+    margin-right: 24px;
+  }
+  .kitchen-service-image {
+    margin-top: 32px;
+  }
+  .kitchen-service-content {
+    margin-top: 0px;
+    margin-left: 24px;
+  }
+  .kitchen-service-content-head {
+    width: 351px;
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 32px;
+  }
+  .kitchen-service-content-body {
+    width: 351px;
+    font-size: 12px;
+    line-height: 170%;
+    margin-top: 16px;
+  }
+  .image-comment-desktop {
+    display: none;
+  }
+  .image-comment-tablet {
+    display: flex;
+  }
+  .head-2-cp-1 {
+    margin-right: 320px;
+  }
+  .head-2-cp-2 {
+    margin-top: 0px;
+    margin-right: 100px;
+  }
+  .head-2-cp-3 {
+    margin-top: 0px;
+    margin-right: 50px;
+  }
+  .head-2-cp-4 {
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+  .furnishing-carousel {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .hero-div {
+    height: 540px;
+  }
+  .hero-head-title {
+    font-size: 40px;
+    line-height: 40px;
+    width: 95%;
+  }
+  .hero-head-title2 {
+    font-size: 32px;
+    line-height: 32px;
+    width: 90%;
+    margin-top: 0px;
+  }
+  .interior {
+    margin-top: 60px;
+    margin-right: 0px;
+  }
+  .furnishings {
+    margin-top: 60px;
+  }
+  .desc {
+    width: 90%;
+  }
+  .dash-tablet {
+    display: none;
+  }
+  .dash-mobile {
+    display: flex;
+  }
+  .hero-image-1 {
+    width: 290px;
+    height: 192px;
+    margin-top: -104px;
+  }
+  .hero-image-2 {
+    display: none;
+  }
+  .head-2 {
+    margin-top: 100px;
+    width: 290px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .head-kitchen {
+    margin-right: 0px;
+  }
+  .head-areas {
+    margin-top: 0px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .head-furnishing-1 {
+    margin-right: 0px;
+  }
+  .head-furnishing-2 {
+    margin-top: 0px;
+  }
+  .head-2-desc {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 290px;
+    font-size: 14px;
+    line-height: 23.8px;
+  }
+  .head-3 {
+    width: 290px;
+    margin-top: 100px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .head-3-desc {
+    width: 290px;
+    margin-top: 20px;
+  }
+  .services-service-card {
+    margin-top: 50px;
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+  .service-info {
+    width: 100%;
+  }
+  .service-image {
+    width: 100%;
+  }
+  .other-info {
+    margin-top: 28px;
+  }
+  .service-card-title {
+    margin-top: 12px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .service-desc {
+    margin-top: 16px;
+    width: 100%;
+  }
+  .service-description {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 95%;
+  }
+  .service-card-reverse {
+    flex-direction: column-reverse;
+  }
+  .service-info-reverse {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .service-image-reverse {
+    width: 100%;
+  }
+  .kitchen-service {
+    display: none;
+  }
+  .kitchen-service-content-mobile {
+    width: 90%;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .kitchen-service-image-mobile {
+    margin-top: 40px;
+  }
+  .kitchen-service-head-mobile {
+    font-family: Ivar Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 40px;
+    width: 100%;
+  }
+  .kitchen-service-body-mobile {
+    font-family: GT America;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 170%;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .image-comment-tablet {
+    display: none;
+  }
+  .image-comment-mobile {
+    display: flex;
+  }
+  .head-2-cp-1 {
+    margin-right: 0px;
+  }
+  .head-2-cp-2 {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .head-2-cp-3 {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .head-2-cp-4 {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .furnishing-project {
+    align-items: flex-start;
+  }
+  .furnishing-carousel {
+    width: 90%;
+  }
+}
