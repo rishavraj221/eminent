@@ -217,6 +217,7 @@
   display: flex;
   margin-top: 30px;
   color: #c19a5b;
+  text-decoration: none;
 }
 
 .authors {
@@ -431,6 +432,9 @@
   .services {
     margin-top: 50px;
   }
+  .service-image-desc {
+    font-size: 12px;
+  }
   .services-gallery {
     margin-bottom: 40px;
     grid-template-columns: repeat(2, 1fr);
@@ -535,6 +539,10 @@
   }
   .service-gallery {
     display: none;
+  }
+  .service-image-desc {
+    font-size: 10px;
+    padding-top: 24px;
   }
   .services-gallery-container-outer {
     overflow: scroll;

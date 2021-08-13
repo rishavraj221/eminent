@@ -218,70 +218,28 @@ const IndexPage = () => {
         <div className="service-styled">Services</div>
         <div className="services-gallery-container-outer">
           <div className="services-gallery">
-            <Link
-              to={`/services/${data.what_we_offer[0].link_to}`}
-              className="services-gallery-item w-1"
-            >
-              <GatsbyImage
-                image={getImage(
-                  data.what_we_offer[0].service_image.gatsbyImageData
-                )}
-              />
-              <div className="service-image-title">
-                {data.what_we_offer[0].service_title.text.toUpperCase()}
-              </div>
-              <div className="service-image-desc">
-                {data.what_we_offer[0].service_description}
-              </div>
-            </Link>
-            <Link
-              to={`/services/${data.what_we_offer[1].link_to}`}
-              className="services-gallery-item w-1"
-            >
-              <GatsbyImage
-                image={getImage(
-                  data.what_we_offer[1].service_image.gatsbyImageData
-                )}
-              />
-              <div className="service-image-title">
-                {data.what_we_offer[1].service_title.text.toUpperCase()}
-              </div>
-              <div className="service-image-desc">
-                {data.what_we_offer[1].service_description}
-              </div>
-            </Link>
-            <Link
-              to={`/services/${data.what_we_offer[2].link_to}`}
-              className="services-gallery-item w-1"
-            >
-              <GatsbyImage
-                image={getImage(
-                  data.what_we_offer[2].service_image.gatsbyImageData
-                )}
-              />
-              <div className="service-image-title">
-                {data.what_we_offer[2].service_title.text.toUpperCase()}
-              </div>
-              <div className="service-image-desc">
-                {data.what_we_offer[2].service_description}
-              </div>
-            </Link>
-            <Link
-              to={`/services/${data.what_we_offer[3].link_to}`}
-              className="services-gallery-item w-1"
-            >
-              <GatsbyImage
-                image={getImage(
-                  data.what_we_offer[3].service_image.gatsbyImageData
-                )}
-              />
-              <div className="service-image-title">
-                {data.what_we_offer[3].service_title.text.toUpperCase()}
-              </div>
-              <div className="service-image-desc">
-                {data.what_we_offer[3].service_description}
-              </div>
-            </Link>
+            {data.what_we_offer.map(offer => (
+              <Link
+                to={`/services/${offer.link_to}`}
+                className="services-gallery-item w-1"
+              >
+                <GatsbyImage
+                  image={getImage(offer.service_image.gatsbyImageData)}
+                />
+                <div className="service-image-title">
+                  {offer.service_title.text.toUpperCase()}
+                </div>
+                <div className="service-image-desc">
+                  {offer.service_description}
+                  <div className="about-read-me">
+                    Read More
+                    <div style={{ marginLeft: 10 }}>
+                      <Icon name="arrowRight" color="#C19A5B" size="12" />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </div>
@@ -313,12 +271,12 @@ const IndexPage = () => {
           <div className="interior-design">Interior Design</div>
           <div className="about-description">
             <div>{data.about_eminent_desc[0].description}</div>
-            <div className="about-read-me">
+            <Link to="/aboutUs" className="about-read-me">
               Read More
-              <div style={{ marginLeft: 20 }}>
-                <Icon name="arrowRight" color="#C19A5B" />
+              <div style={{ marginLeft: 10 }}>
+                <Icon name="arrowRight" color="#C19A5B" size="12" />
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
