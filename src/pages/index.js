@@ -53,7 +53,8 @@ const IndexPage = () => {
                 service_title {
                   text
                 }
-                service_descriptioin
+                service_description
+                link_to
               }
               about_eminent_desc {
                 image_1 {
@@ -215,11 +216,13 @@ const IndexPage = () => {
         <div className="service-title">WHAT </div>
         <div className="service-title title-b">WE OFFER</div>
         <div className="service-styled">Services</div>
-        <div className="services-gallery">
-          <div className="service-gallery-a service-gallery-a-1">
-            <div>
+        <div className="services-gallery-container-outer">
+          <div className="services-gallery">
+            <Link
+              to={`/services/${data.what_we_offer[0].link_to}`}
+              className="services-gallery-item w-1"
+            >
               <GatsbyImage
-                className="service-image"
                 image={getImage(
                   data.what_we_offer[0].service_image.gatsbyImageData
                 )}
@@ -227,8 +230,14 @@ const IndexPage = () => {
               <div className="service-image-title">
                 {data.what_we_offer[0].service_title.text.toUpperCase()}
               </div>
-            </div>
-            <div className="service-tall-disp">
+              <div className="service-image-desc">
+                {data.what_we_offer[0].service_description}
+              </div>
+            </Link>
+            <Link
+              to={`/services/${data.what_we_offer[1].link_to}`}
+              className="services-gallery-item w-1"
+            >
               <GatsbyImage
                 image={getImage(
                   data.what_we_offer[1].service_image.gatsbyImageData
@@ -237,10 +246,14 @@ const IndexPage = () => {
               <div className="service-image-title">
                 {data.what_we_offer[1].service_title.text.toUpperCase()}
               </div>
-            </div>
-          </div>
-          <div className="service-gallery-a">
-            <div>
+              <div className="service-image-desc">
+                {data.what_we_offer[1].service_description}
+              </div>
+            </Link>
+            <Link
+              to={`/services/${data.what_we_offer[2].link_to}`}
+              className="services-gallery-item w-1"
+            >
               <GatsbyImage
                 image={getImage(
                   data.what_we_offer[2].service_image.gatsbyImageData
@@ -249,8 +262,14 @@ const IndexPage = () => {
               <div className="service-image-title">
                 {data.what_we_offer[2].service_title.text.toUpperCase()}
               </div>
-            </div>
-            <div className="service-tall-disp">
+              <div className="service-image-desc">
+                {data.what_we_offer[2].service_description}
+              </div>
+            </Link>
+            <Link
+              to={`/services/${data.what_we_offer[3].link_to}`}
+              className="services-gallery-item w-1"
+            >
               <GatsbyImage
                 image={getImage(
                   data.what_we_offer[3].service_image.gatsbyImageData
@@ -259,7 +278,10 @@ const IndexPage = () => {
               <div className="service-image-title">
                 {data.what_we_offer[3].service_title.text.toUpperCase()}
               </div>
-            </div>
+              <div className="service-image-desc">
+                {data.what_we_offer[3].service_description}
+              </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -381,7 +403,7 @@ const IndexPage = () => {
         <div className="quote-icon-mobile">
           <Icon name="quote" size="90" />
         </div>
-        <div className="quote-carousel" style={{ width: "80%" }}>
+        <div className="quote-carousel">
           <Carousel
             className="quote-slider"
             selectedItem={currentQuoteIndex}

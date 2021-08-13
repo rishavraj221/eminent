@@ -48,10 +48,16 @@
               "label": "Service Title"
             }
           },
-          "service_descriptioin": {
+          "service_description": {
             "type": "Text",
             "config": {
-              "label": "Service_descriptioin"
+              "label": "Service Description"
+            }
+          },
+          "link_to": {
+            "type": "Text",
+            "config": {
+              "label": "Link To"
             }
           }
         },

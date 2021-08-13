@@ -60,18 +60,56 @@
   color: #c19a5b;
   margin-top: -70px;
 }
-
-.services-gallery {
-  display: flex;
+.services-gallery-container-outer {
   width: 100%;
-  align-items: center;
+  display: flex;
   justify-content: center;
+}
+.services-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+  width: 80%;
   margin-top: 50px;
 }
-
-.services-gallery > div > div {
-  width: 36%;
-  margin: 0px 1% 0px;
+.services-gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+.services-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+}
+.service-image-desc:hover {
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
+.service-image-desc {
+  opacity: 0;
+  position: absolute;
+  color: #34342e;
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  padding-left: 10%;
+  padding-top: 58px;
+  padding-right: 10%;
+  z-index: 4;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: 0.3s ease-in-out;
+  backdrop-filter: blur(40px);
 }
 
 .service-image-title {
@@ -265,6 +303,7 @@
 
 .quotes {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   margin-top: 120px;
@@ -392,16 +431,9 @@
   .services {
     margin-top: 50px;
   }
-  .service-gallery-a {
-    flex-direction: column;
-  }
-  .service-gallery-a-1 {
-    align-items: flex-end;
-  }
-  .services-gallery > div > div {
-    width: 70%;
-    margin: 0px 3% 0px;
+  .services-gallery {
     margin-bottom: 40px;
+    grid-template-columns: repeat(2, 1fr);
   }
   .about-head {
     font-size: 55px;
@@ -452,6 +484,11 @@
   .quote-icon-tablet {
     display: flex;
   }
+  .quote-text {
+    width: 80%;
+    font-size: 14px;
+    line-height: 23.8px;
+  }
   .featured-project-image {
     width: 100%;
     height: 250px;
@@ -498,6 +535,19 @@
   }
   .service-gallery {
     display: none;
+  }
+  .services-gallery-container-outer {
+    overflow: scroll;
+    width: 100%;
+  }
+  .services-gallery {
+    display: flex;
+    width: 1250px;
+    padding-left: 480px;
+    padding-right: 30px;
+  }
+  .services-gallery-item {
+    width: 250px;
   }
   .service-btn-desktop {
     display: none;
@@ -557,6 +607,10 @@
   .author-role {
     font-size: 14px;
   }
+  .feature-projects-mobile .author-role {
+    display: flex;
+    justify-content: center;
+  }
   .author-about {
     font-size: 14px;
   }
@@ -580,6 +634,7 @@
   }
   .quote-carousel {
     margin-bottom: 80px;
+    width: 100%;
   }
   .quote-icon-desktop {
     display: none;
@@ -590,11 +645,16 @@
   .quote-icon-mobile {
     display: flex;
   }
+  .quote-text {
+    width: 90%;
+  }
   .featured-projects {
     display: none;
   }
   .feature-projects-mobile {
     display: flex;
+    margin-top: 40px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 760px) {
@@ -623,11 +683,10 @@
     margin-bottom: 80px;
   }
   .team-member {
-    width: 90%;
+    width: 100%;
   }
   .team-member-image {
     width: 90%;
-    height: 220px;
   }
 }
 
