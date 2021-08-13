@@ -34,7 +34,7 @@ module.exports = {
     {
       resolve: "gatsby-source-prismic",
       options: {
-        repositoryName: process.env.GATSBY_PRISMIC_REPO,
+        repositoryName: "eminent-redesign",
         schemas: {
           home_page: require("./src/schemas/Home.json"),
           services: require("./src/schemas/Services.json"),
