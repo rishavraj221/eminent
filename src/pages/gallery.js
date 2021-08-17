@@ -243,6 +243,18 @@ const Gallery = () => {
         )}
       </div>
 
+      <div className="gallery-image-grid-mobile">
+        {galleryImages.map(img => (
+          <div className="gallery-image-container w-3">
+            <div className="gallery-item">
+              <div className="gallery-image">
+                <GatsbyImage image={getImage(img.image.gatsbyImageData)} />
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
       <div className="pagination-component">
         {pagePagNum[0] > 1 && (
           <div
