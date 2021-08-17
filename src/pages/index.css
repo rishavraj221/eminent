@@ -30,8 +30,9 @@
   cursor: pointer;
 }
 
-.sliderProjectDetail > div > div {
+.sliderProjectDetail > div > a {
   margin: 0px 15px 0px;
+  text-decoration: none;
 }
 
 .services {

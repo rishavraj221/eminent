@@ -26,12 +26,14 @@ const Gallery = () => {
   const handleDecPagination = () => {
     if (pagePagNum[0] > 1) {
       setPagePagNum([pagePagNum[0] - 1, pagePagNum[0], pagePagNum[1]])
+      window.scrollTo(0, 0)
     }
   }
 
   const handleIncPagination = () => {
     if (pagePagNum[2] < Math.floor(galleryImages.length / 7) + 1) {
       setPagePagNum([pagePagNum[1], pagePagNum[2], pagePagNum[2] + 1])
+      window.scrollTo(0, 0)
     }
   }
 
@@ -260,7 +262,10 @@ const Gallery = () => {
             opacity: currentPagIndex === 0 ? 1 : 0.5,
           }}
           className="pagination-text"
-          onClick={() => setCurrPagIndex(0)}
+          onClick={() => {
+            setCurrPagIndex(0)
+            window.scrollTo(0, 0)
+          }}
           role="button"
           tabIndex={0}
           onKeyDown={() => setCurrPagIndex(0)}
@@ -273,7 +278,10 @@ const Gallery = () => {
             opacity: currentPagIndex === 1 ? 1 : 0.5,
           }}
           className="pagination-text"
-          onClick={() => setCurrPagIndex(1)}
+          onClick={() => {
+            setCurrPagIndex(1)
+            window.scrollTo(0, 0)
+          }}
           role="button"
           tabIndex={0}
           onKeyDown={() => setCurrPagIndex(1)}
@@ -286,7 +294,10 @@ const Gallery = () => {
             opacity: currentPagIndex === 2 ? 1 : 0.5,
           }}
           className="pagination-text"
-          onClick={() => setCurrPagIndex(2)}
+          onClick={() => {
+            setCurrPagIndex(2)
+            window.scrollTo(0, 0)
+          }}
           role="button"
           tabIndex={0}
           onKeyDown={() => setCurrPagIndex(2)}

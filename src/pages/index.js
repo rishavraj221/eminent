@@ -182,6 +182,8 @@ const IndexPage = () => {
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
+              width: "100%",
+              height: "100%",
             }}
           >
             <GatsbyImage
@@ -194,15 +196,27 @@ const IndexPage = () => {
       </Carousel>
       <div className="sliderProjectDetail">
         <div>
-          <div>
+          <a
+            href="https://www.facebook.com/eminentid/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Icon name="facebook" color="rgba(52, 52, 46, 0.3)" size={22} />
-          </div>
-          <div>
+          </a>
+          <a
+            href="https://www.instagram.com/eminentinteriordesign/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Icon name="instagram" color="rgba(52, 52, 46, 0.3)" size={22} />
-          </div>
-          <div>
+          </a>
+          <a
+            href="http://www.houzz.com/pro/eminentid/eminent-interior-design"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Icon name="houzz" color="rgba(52, 52, 46, 0.3)" size={22} />
-          </div>
+          </a>
         </div>
         <div className="readMore">
           Read More
