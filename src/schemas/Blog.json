@@ -1,11 +1,5 @@
 {
   "Main": {
-    "project_type": {
-      "type": "Text",
-      "config": {
-        "label": "Project Type"
-      }
-    },
     "project_title": {
       "type": "StructuredText",
       "config": {
@@ -19,10 +13,10 @@
         "label": "Posted Date"
       }
     },
-    "project_location": {
+    "time_to_read": {
       "type": "Text",
       "config": {
-        "label": "Project Location"
+        "label": "Time to read"
       }
     },
     "author_image": {

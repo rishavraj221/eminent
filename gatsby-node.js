@@ -17,27 +17,25 @@ module.exports.onCreateNode = ({ node, actions }) => {
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const blogTemplate = path.resolve("./src/templates/blog.js")
+  const projectTemplate = path.resolve("./src/templates/project.js")
   const res = await graphql(`
     query {
-      allMarkdownRemark {
+      allPrismicProject {
         edges {
           node {
-            fields {
-              slug
-            }
+            prismicId
           }
         }
       }
     }
   `)
 
-  res.data.allMarkdownRemark.edges.forEach(edge => {
+  res.data.allPrismicProject.edges.forEach(edge => {
     createPage({
-      component: blogTemplate,
-      path: `/blog/${edge.node.fields.slug}`,
+      component: projectTemplate,
+      path: `/projects/${edge.node.prismicId}`,
       context: {
-        slug: edge.node.fields.slug,
+        slug: edge.node.prismicId,
       },
     })
   })

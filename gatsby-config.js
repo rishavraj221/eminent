@@ -38,10 +38,9 @@ module.exports = {
         schemas: {
           home_page: require("./src/schemas/Home.json"),
           services: require("./src/schemas/Services.json"),
-          featured_projects: require("./src/schemas/FeaturedProjects.json"),
           project: require("./src/schemas/Project.json"),
-          navigation: require("./src/schemas/Navigation.json"),
           gallery: require("./src/schemas/Gallery.json"),
+          blog_post: require("./src/schemas/Blog.json"),
         },
       },
     },

@@ -3,7 +3,10 @@ import React from "react"
 import Account from "./account"
 import Address from "./address"
 import ArrowLeft from "./arrowLeft"
+import ArrowLeft2 from "./arrowLeft2"
 import ArrowRight from "./arrowRight"
+import ArrRight2 from "./arrowRight2"
+import Calender from "./calender"
 import CLArr from "./carouselLeftArrow"
 import CRArr from "./carouselRightArrow"
 import Comment from "./comment"
@@ -35,7 +38,10 @@ function Icon({ name, color, size, width = "44" }) {
   if (argName === "account") return <Account color={color} size={size} />
   if (argName === "address") return <Address color={color} size={size} />
   if (argName === "arrowleft") return <ArrowLeft color={color} size={size} />
+  if (argName === "arrowleft2") return <ArrowLeft2 color={color} size={size} />
   if (argName === "arrowright") return <ArrowRight color={color} size={size} />
+  if (argName === "arrowright2") return <ArrRight2 color={color} size={size} />
+  if (argName === "calender") return <Calender color={color} size={size} />
   if (argName === "carleftarrow") return <CLArr color={color} size={size} />
   if (argName === "carrightarrow") return <CRArr color={color} size={size} />
   if (argName === "comment") return <Comment color={color} size={size} />
