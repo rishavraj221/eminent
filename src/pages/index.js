@@ -177,6 +177,7 @@ const IndexPage = () => {
       >
         {data.slider.map(item => (
           <div
+            key={Math.random()}
             style={{
               display: "flex",
               flexDirection: "column",
@@ -189,6 +190,7 @@ const IndexPage = () => {
             <GatsbyImage
               className="slider-image"
               image={getImage(item.slider_image.gatsbyImageData)}
+              alt="alt"
             />
             <div className="sliderHeader">{item.image_title.text}</div>
           </div>
@@ -234,11 +236,13 @@ const IndexPage = () => {
           <div className="services-gallery">
             {data.what_we_offer.map(offer => (
               <Link
+                key={Math.random()}
                 to={`/services/${offer.link_to}`}
                 className="services-gallery-item w-1"
               >
                 <GatsbyImage
                   image={getImage(offer.service_image.gatsbyImageData)}
+                  alt="alt"
                 />
                 <div className="service-image-title">
                   {offer.service_title.text.toUpperCase()}
@@ -273,10 +277,12 @@ const IndexPage = () => {
           <GatsbyImage
             className="about-image-1"
             image={getImage(data.about_eminent_desc[0].image_1.gatsbyImageData)}
+            alt="alt"
           />
           <GatsbyImage
             className="about-image-2"
             image={getImage(data.about_eminent_desc[0].image_2.gatsbyImageData)}
+            alt="alt"
           />
         </div>
         <div className="about-content">
@@ -296,6 +302,7 @@ const IndexPage = () => {
       </div>
       {data.authors.map((author, index) => (
         <div
+          key={Math.random()}
           className={index % 2 === 0 ? "authors" : "authors authors-reverse"}
         >
           <div className="author-desc">
@@ -316,7 +323,10 @@ const IndexPage = () => {
             </Link>
           </div>
           <div className="author-image">
-            <GatsbyImage image={getImage(author.image.gatsbyImageData)} />
+            <GatsbyImage
+              image={getImage(author.image.gatsbyImageData)}
+              alt="alt"
+            />
           </div>
         </div>
       ))}
@@ -327,11 +337,12 @@ const IndexPage = () => {
         swipeable
       >
         {data.team_members.map(team_member => (
-          <div className="team-member">
+          <div key={Math.random()} className="team-member">
             <div>
               <div className="team-member-image">
                 <GatsbyImage
                   image={getImage(team_member.image.gatsbyImageData)}
+                  alt="alt"
                 />
               </div>
 
@@ -346,11 +357,12 @@ const IndexPage = () => {
           </div>
         ))}
         {data.team_members.map(team_member => (
-          <div className="team-member">
+          <div key={Math.random()} className="team-member">
             <div>
               <div className="team-member-image">
                 <GatsbyImage
                   image={getImage(team_member.image.gatsbyImageData)}
+                  alt="alt"
                 />
               </div>
 
@@ -410,7 +422,9 @@ const IndexPage = () => {
             useKeyboardArrows
           >
             {data.quotes.map(quote => (
-              <div className="quote-text">{quote.quote}</div>
+              <div key={Math.random()} className="quote-text">
+                {quote.quote}
+              </div>
             ))}
           </Carousel>
         </div>
@@ -425,6 +439,7 @@ const IndexPage = () => {
                 image={getImage(
                   data.featured_projects[0].image.gatsbyImageData
                 )}
+                alt="alt"
               />
               <div className="featured-project-title">
                 {data.featured_projects[0].project_name.text.toUpperCase()}
@@ -441,6 +456,7 @@ const IndexPage = () => {
                 image={getImage(
                   data.featured_projects[1].image.gatsbyImageData
                 )}
+                alt="alt"
               />
               <div className="featured-project-title">
                 {data.featured_projects[1].project_name.text.toUpperCase()}
@@ -458,6 +474,7 @@ const IndexPage = () => {
                 image={getImage(
                   data.featured_projects[2].image.gatsbyImageData
                 )}
+                alt="alt"
               />
               <div className="featured-project-title">
                 {data.featured_projects[2].project_name.text.toUpperCase()}
@@ -474,6 +491,7 @@ const IndexPage = () => {
                 image={getImage(
                   data.featured_projects[3].image.gatsbyImageData
                 )}
+                alt="alt"
               />
               <div className="featured-project-title">
                 {data.featured_projects[3].project_name.text.toUpperCase()}
@@ -518,12 +536,13 @@ const IndexPage = () => {
             useKeyboardArrows
           >
             {data.featured_projects.map(project => (
-              <div className="team-member">
+              <div key={Math.random()} className="team-member">
                 <div>
                   <div>
                     <GatsbyImage
                       className="team-member-image"
                       image={getImage(project.image.gatsbyImageData)}
+                      alt="alt"
                     />
                   </div>
 

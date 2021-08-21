@@ -146,6 +146,7 @@ const Gallery = () => {
                     galleryImages[(pagePagNum[currentPagIndex] - 1) * 7].image
                       .gatsbyImageData
                   )}
+                  alt="alt"
                 />
               </div>
             </div>
@@ -161,6 +162,7 @@ const Gallery = () => {
                     galleryImages[(pagePagNum[currentPagIndex] - 1) * 7 + 1]
                       .image.gatsbyImageData
                   )}
+                  alt="alt"
                 />
               </div>
             </div>
@@ -176,6 +178,7 @@ const Gallery = () => {
                     galleryImages[(pagePagNum[currentPagIndex] - 1) * 7 + 2]
                       .image.gatsbyImageData
                   )}
+                  alt="alt"
                 />
               </div>
             </div>
@@ -191,6 +194,7 @@ const Gallery = () => {
                     galleryImages[(pagePagNum[currentPagIndex] - 1) * 7 + 3]
                       .image.gatsbyImageData
                   )}
+                  alt="alt"
                 />
               </div>
             </div>
@@ -206,6 +210,7 @@ const Gallery = () => {
                     galleryImages[(pagePagNum[currentPagIndex] - 1) * 7 + 4]
                       .image.gatsbyImageData
                   )}
+                  alt="alt"
                 />
               </div>
             </div>
@@ -221,6 +226,7 @@ const Gallery = () => {
                     galleryImages[(pagePagNum[currentPagIndex] - 1) * 7 + 5]
                       .image.gatsbyImageData
                   )}
+                  alt="alt"
                 />
               </div>
             </div>
@@ -236,6 +242,7 @@ const Gallery = () => {
                     galleryImages[(pagePagNum[currentPagIndex] - 1) * 7 + 6]
                       .image.gatsbyImageData
                   )}
+                  alt="alt"
                 />
               </div>
             </div>
@@ -245,10 +252,13 @@ const Gallery = () => {
 
       <div className="gallery-image-grid-mobile">
         {galleryImages.map(img => (
-          <div className="gallery-image-container w-3">
+          <div key={Math.random()} className="gallery-image-container w-3">
             <div className="gallery-item">
               <div className="gallery-image">
-                <GatsbyImage image={getImage(img.image.gatsbyImageData)} />
+                <GatsbyImage
+                  image={getImage(img.image.gatsbyImageData)}
+                  alt="alt"
+                />
               </div>
             </div>
           </div>

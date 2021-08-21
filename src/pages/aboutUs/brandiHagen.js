@@ -35,6 +35,7 @@ const data = {
         <StaticImage
           className="spotlight-carousel-image"
           src="../../assets/services_page_assets/InteriorDesign/1.png"
+          alt="alt"
         />
       ),
       title: "Contemporary Retro",
@@ -45,6 +46,7 @@ const data = {
         <StaticImage
           className="spotlight-carousel-image"
           src="../../assets/services_page_assets/InteriorDesign/2.png"
+          alt="alt"
         />
       ),
       title: "Clean & Modern",
@@ -55,6 +57,7 @@ const data = {
         <StaticImage
           className="spotlight-carousel-image"
           src="../../assets/services_page_assets/InteriorDesign/3.png"
+          alt="alt"
         />
       ),
       title: "Colourful Traditional",
@@ -94,7 +97,7 @@ const heroContent2 = (
 )
 const heroContent3 = (
   <div className="bh-hero-image">
-    <StaticImage src="../../assets/aboutUs/owner.png" />
+    <StaticImage src="../../assets/aboutUs/owner.png" alt="alt" />
   </div>
 )
 
@@ -137,6 +140,7 @@ const BrandiHagen = () => {
           <StaticImage
             className="bh-image-2"
             src="../../assets/aboutUs/owner_pic_2.png"
+            alt="alt"
           />
         </div>
         <div className="bh-bio-content-container">
@@ -154,13 +158,17 @@ const BrandiHagen = () => {
           </div>
           <div className="bh-bio-title-container">
             {data.bioAwards.title.map(bio => (
-              <div className="bh-bio-title">{bio}</div>
+              <div key={Math.random()} className="bh-bio-title">
+                {bio}
+              </div>
             ))}
           </div>
           <div className="bh-awards-head">AWARDS</div>
           <ul className="bh-awards-container">
             {data.bioAwards.awardsList.map(award => (
-              <li className="bh-award">{award}</li>
+              <li key={Math.random()} className="bh-award">
+                {award}
+              </li>
             ))}
           </ul>
           <div className="bh-awards-head">VOLUNTEERISM</div>
@@ -169,7 +177,9 @@ const BrandiHagen = () => {
           </div>
           <ul className="bh-awards-container">
             {data.bioAwards.volunteerismList.map(volunteer => (
-              <li className="bh-award">{volunteer}</li>
+              <li key={Math.random()} className="bh-award">
+                {volunteer}
+              </li>
             ))}
           </ul>
         </div>
@@ -185,7 +195,7 @@ const BrandiHagen = () => {
           additionalTransfrom={-20 * 5}
         >
           {data.spotlights.map(spotlight => (
-            <div className="spotlight-project">
+            <div key={Math.random()} className="spotlight-project">
               <div className="spotlight-carousel-image-container">
                 {spotlight.image}
               </div>

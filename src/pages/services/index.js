@@ -67,7 +67,10 @@ const ServicesPage = () => {
     <Layout footerGallery={true}>
       <Head title="Services" />
       <div className="hero-image">
-        <GatsbyImage image={getImage(data.hero_image.gatsbyImageData)} />
+        <GatsbyImage
+          image={getImage(data.hero_image.gatsbyImageData)}
+          alt="alt"
+        />
         <div className="hero-image-content">
           <div className="hero-title hero-title-1">OUR</div>
           <div className="hero-title hero-title-2">SERVICES</div>
@@ -76,7 +79,7 @@ const ServicesPage = () => {
       </div>
       <div className="what-we-offer">WHAT WE OFFER</div>
       {data.services.map((service, index) => (
-        <div className="service-card">
+        <div key={Math.random()} className="service-card">
           <div className="service-info">
             <div className="service-index">
               {(index + 1).toLocaleString("en-US", {
@@ -95,7 +98,10 @@ const ServicesPage = () => {
             </Link>
           </div>
           <div className="service-image">
-            <GatsbyImage image={getImage(service.image.gatsbyImageData)} />
+            <GatsbyImage
+              image={getImage(service.image.gatsbyImageData)}
+              alt="alt"
+            />
           </div>
         </div>
       ))}
@@ -109,11 +115,12 @@ const ServicesPage = () => {
           additionalTransfrom={-20 * 5}
         >
           {data.spotlights.map(spotlight => (
-            <div className="spotlight-project">
+            <div key={Math.random()} className="spotlight-project">
               <div className="spotlight-carousel-image-container">
                 <GatsbyImage
                   className="spotlight-carousel-image"
                   image={getImage(spotlight.image.gatsbyImageData)}
+                  alt="alt"
                 />
               </div>
               <div className="spotlight-carousel-title">

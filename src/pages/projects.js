@@ -60,8 +60,6 @@ const Projects = () => {
     }
   }
 
-  console.log(data)
-
   return (
     <Layout>
       <Head title="Projects" />
@@ -85,7 +83,10 @@ const Projects = () => {
         {[3, 2, 2, 3, 3, 2].map((wid, index) => {
           if (!data[(pagePagNum[currentPagIndex] - 1) * 6 + index]) return null
           return (
-            <div className={`gallery-image-container w-${wid}`}>
+            <div
+              key={Math.random()}
+              className={`gallery-image-container w-${wid}`}
+            >
               <Link
                 to={`/projects/${
                   data[(pagePagNum[currentPagIndex] - 1) * 6 + index].node

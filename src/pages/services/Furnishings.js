@@ -34,9 +34,18 @@ const data = {
   page_head_desc:
     "Let our award-winning interior designers help you select your home's furnishings Minneapolis/St Paul and surrounding areas.",
   hero_image: [
-    <StaticImage src="../../assets/services_page_assets/Furnishings/hero1.png" />,
-    <StaticImage src="../../assets/services_page_assets/Furnishings/hero2.png" />,
-    <StaticImage src="../../assets/services_page_assets/Furnishings/hero3.png" />,
+    <StaticImage
+      src="../../assets/services_page_assets/Furnishings/hero1.png"
+      alt="alt"
+    />,
+    <StaticImage
+      src="../../assets/services_page_assets/Furnishings/hero2.png"
+      alt="alt"
+    />,
+    <StaticImage
+      src="../../assets/services_page_assets/Furnishings/hero3.png"
+      alt="alt"
+    />,
   ],
   head_2: ["Furnishings", "Minneapolis"],
   head_2_desc:
@@ -51,6 +60,7 @@ const data = {
         <StaticImage
           className="spotlight-carousel-image"
           src="../../assets/services_page_assets/Furnishings/1.png"
+          alt="alt"
         />
       ),
       title: "Sofas",
@@ -60,6 +70,7 @@ const data = {
         <StaticImage
           className="spotlight-carousel-image"
           src="../../assets/services_page_assets/Furnishings/2.png"
+          alt="alt"
         />
       ),
       title: "Windows",
@@ -69,6 +80,7 @@ const data = {
         <StaticImage
           className="spotlight-carousel-image"
           src="../../assets/services_page_assets/Furnishings/3.png"
+          alt="alt"
         />
       ),
       title: "Bedding",
@@ -78,6 +90,7 @@ const data = {
         <StaticImage
           className="spotlight-carousel-image"
           src="../../assets/services_page_assets/Furnishings/4.png"
+          alt="alt"
         />
       ),
       title: "Tables",
@@ -112,7 +125,10 @@ const Furnishings = () => {
       </div>
       <div className="hero-image-container">
         <div className="hero-image-1">
-          <StaticImage src="../../assets/services_page_assets/Furnishings/hero1.png" />
+          <StaticImage
+            src="../../assets/services_page_assets/Furnishings/hero1.png"
+            alt="alt"
+          />
         </div>
         <div className="hero-image-2">{data.hero_image[1]}</div>
         <div className="hero-image-3">{data.hero_image[2]}</div>
@@ -136,7 +152,7 @@ const Furnishings = () => {
           additionalTransfrom={-20 * 5}
         >
           {data.providings.map(spotlight => (
-            <div className="furnishing-project">
+            <div key={Math.random()} className="furnishing-project">
               <div className="furnishing-carousel-image-container">
                 {spotlight.image}
               </div>

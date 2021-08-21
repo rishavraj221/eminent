@@ -34,18 +34,36 @@ const data = {
   page_head_desc:
     "Create a spa-like bathroom to enhance your day and night routines with our bathroom designers' collaborative approach.  We invite you to partner with Eminent Interior Design's award-winning bath designers Minneapolis, MN",
   hero_image: [
-    <StaticImage src="../../assets/services_page_assets/BathDesign/hero1.png" />,
-    <StaticImage src="../../assets/services_page_assets/BathDesign/hero2.png" />,
-    <StaticImage src="../../assets/services_page_assets/BathDesign/hero3.png" />,
+    <StaticImage
+      src="../../assets/services_page_assets/BathDesign/hero1.png"
+      alt="alt"
+    />,
+    <StaticImage
+      src="../../assets/services_page_assets/BathDesign/hero2.png"
+      alt="alt"
+    />,
+    <StaticImage
+      src="../../assets/services_page_assets/BathDesign/hero3.png"
+      alt="alt"
+    />,
   ],
   head_2: ["Bath Designers", "Minneapolis & Surrounding Areas"],
   head_2_desc:
     "Prior to beginning your remodel or new home build ease the stress with Eminent’s award-winning bath designers.",
   service: {
     images: [
-      <StaticImage src="../../assets/services_page_assets/BathDesign/1.png" />,
-      <StaticImage src="../../assets/services_page_assets/BathDesign/2.png" />,
-      <StaticImage src="../../assets/services_page_assets/BathDesign/3.png" />,
+      <StaticImage
+        src="../../assets/services_page_assets/BathDesign/1.png"
+        alt="alt"
+      />,
+      <StaticImage
+        src="../../assets/services_page_assets/BathDesign/2.png"
+        alt="alt"
+      />,
+      <StaticImage
+        src="../../assets/services_page_assets/BathDesign/3.png"
+        alt="alt"
+      />,
     ],
     contents: [
       {
@@ -72,6 +90,7 @@ const data = {
         <StaticImage
           className="spotlight-carousel-image"
           src="../../assets/services_page_assets/BathDesign/1.png"
+          alt="alt"
         />
       ),
       title: "Contemporary Retro",
@@ -82,6 +101,7 @@ const data = {
         <StaticImage
           className="spotlight-carousel-image"
           src="../../assets/services_page_assets/BathDesign/2.png"
+          alt="alt"
         />
       ),
       title: "Clean & Modern",
@@ -92,6 +112,7 @@ const data = {
         <StaticImage
           className="spotlight-carousel-image"
           src="../../assets/services_page_assets/BathDesign/3.png"
+          alt="alt"
         />
       ),
       title: "Colourful Traditional",
@@ -130,7 +151,10 @@ const BathDesign = () => {
       </div>
       <div className="hero-image-container">
         <div className="hero-image-1">
-          <StaticImage src="../../assets/services_page_assets/BathDesign/hero1.png" />
+          <StaticImage
+            src="../../assets/services_page_assets/BathDesign/hero1.png"
+            alt="alt"
+          />
         </div>
         <div className="hero-image-2">{data.hero_image[1]}</div>
         <div className="hero-image-3">{data.hero_image[2]}</div>
@@ -146,7 +170,7 @@ const BathDesign = () => {
         </div>
         <div className="kitchen-service-content">
           {data.service.contents.map(content => (
-            <div>
+            <div key={Math.random()}>
               <div className="kitchen-service-content-head">
                 {content.head.toUpperCase()}
               </div>
@@ -200,7 +224,7 @@ const BathDesign = () => {
           additionalTransfrom={-20 * 5}
         >
           {data.spotlights.map(spotlight => (
-            <div className="spotlight-project">
+            <div key={Math.random()} className="spotlight-project">
               <div className="spotlight-carousel-image-container">
                 {spotlight.image}
               </div>

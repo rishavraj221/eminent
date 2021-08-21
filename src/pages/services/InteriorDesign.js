@@ -12,9 +12,18 @@ const data = {
   page_head_desc:
     "Let us help you with the interior design of your home or remodel of your dreams. We invite you to partner with Eminent Interior Design Minneapolis award-winning design team.",
   hero_image: [
-    <StaticImage src="../../assets/services_page_assets/InteriorDesign/hero1.png" />,
-    <StaticImage src="../../assets/services_page_assets/InteriorDesign/hero2.png" />,
-    <StaticImage src="../../assets/services_page_assets/InteriorDesign/hero3.png" />,
+    <StaticImage
+      src="../../assets/services_page_assets/InteriorDesign/hero1.png"
+      alt="alt"
+    />,
+    <StaticImage
+      src="../../assets/services_page_assets/InteriorDesign/hero2.png"
+      alt="alt"
+    />,
+    <StaticImage
+      src="../../assets/services_page_assets/InteriorDesign/hero3.png"
+      alt="alt"
+    />,
   ],
   head_2: "New Homes & Remodels Interior Design Services",
   head_2_desc:
@@ -23,7 +32,10 @@ const data = {
     {
       other: "Other factors we consider",
       image: (
-        <StaticImage src="../../assets/services_page_assets/InteriorDesign/1.png" />
+        <StaticImage
+          src="../../assets/services_page_assets/InteriorDesign/1.png"
+          alt="alt"
+        />
       ),
       title: "Storage Solutions",
       desc: "Shelves, drawers, hooks, rollouts, cubbies, built-ins, cabinets, and armoires. Our designers can help you think through your storage needs and how they will evolve over time. As a result, you can incorporate innovative, attractive storage solutions into your dream home.",
@@ -31,7 +43,10 @@ const data = {
     {
       other: false,
       image: (
-        <StaticImage src="../../assets/services_page_assets/InteriorDesign/2.png" />
+        <StaticImage
+          src="../../assets/services_page_assets/InteriorDesign/2.png"
+          alt="alt"
+        />
       ),
       title: "Materials and Finishes",
       desc: "Decisions, decisions. We can help you narrow them down, with our keen eye for the knobs, faucets, tile, flooring, and fabric choices that complement and enhance your architectural plans and your personal style.",
@@ -39,7 +54,10 @@ const data = {
     {
       other: false,
       image: (
-        <StaticImage src="../../assets/services_page_assets/InteriorDesign/3.png" />
+        <StaticImage
+          src="../../assets/services_page_assets/InteriorDesign/3.png"
+          alt="alt"
+        />
       ),
       title: "Lighting and Window Treatments",
       desc: "How does the lighting change throughout the days and seasons? What lighting and window treatments enhance the look and feel of your interior spaces? We help you answer these questions and create a lighting plan that fits your needs.",
@@ -86,6 +104,7 @@ const InteriorDesign = () => {
       <div className="head-2-desc">{data.head_2_desc}</div>
       {data.service.map((serv, index) => (
         <div
+          key={Math.random()}
           className={
             index % 2 === 0
               ? "services-service-card"

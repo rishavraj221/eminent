@@ -12,9 +12,18 @@ const data = {
   page_head_desc:
     "Let us help you plan the new home or remodel of your dreams. We invite you to partner with Eminent Interior Design's award-winning construction planning team Minneapolis, MN",
   hero_image: [
-    <StaticImage src="../../assets/services_page_assets/ConstructionPlanning/hero1.png" />,
-    <StaticImage src="../../assets/services_page_assets/ConstructionPlanning/hero2.png" />,
-    <StaticImage src="../../assets/services_page_assets/ConstructionPlanning/hero3.png" />,
+    <StaticImage
+      src="../../assets/services_page_assets/ConstructionPlanning/hero1.png"
+      alt="alt"
+    />,
+    <StaticImage
+      src="../../assets/services_page_assets/ConstructionPlanning/hero2.png"
+      alt="alt"
+    />,
+    <StaticImage
+      src="../../assets/services_page_assets/ConstructionPlanning/hero3.png"
+      alt="alt"
+    />,
   ],
   head_2: ["Residential", "Construction", "Planning", "Minneapolis"],
   head_2_desc:
@@ -23,7 +32,10 @@ const data = {
     {
       other: false,
       image: (
-        <StaticImage src="../../assets/services_page_assets/ConstructionPlanning/1.png" />
+        <StaticImage
+          src="../../assets/services_page_assets/ConstructionPlanning/1.png"
+          alt="alt"
+        />
       ),
       title: "Construction Planning for New Homes & Remodels",
       desc: "At Eminent we are experts at striking that delicate balance between structure, flow and aesthetics, and our designers collaborate closely with architects, contractors, and most important, you, to achieve that magical harmony between all three.",
@@ -31,7 +43,10 @@ const data = {
     {
       other: false,
       image: (
-        <StaticImage src="../../assets/services_page_assets/ConstructionPlanning/2.png" />
+        <StaticImage
+          src="../../assets/services_page_assets/ConstructionPlanning/2.png"
+          alt="alt"
+        />
       ),
       title: "Get It Right with Professional Construction Planners",
       desc: "Decisions, decisions. We can help you narrow them down, with our keen eye for the knobs, faucets, tile, flooring, and fabric choices that complement and enhance your architectural plans and your personal style.",
@@ -79,6 +94,7 @@ const ConstructionPlanning = () => {
       <div className="head-2-desc">{data.head_2_desc}</div>
       {data.service.map((serv, index) => (
         <div
+          key={Math.random()}
           className={
             index % 2 === 0
               ? "services-service-card"

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import { Formik, Form, Field } from "formik"
 import { Box, InputAdornment } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
@@ -44,27 +44,30 @@ const followUsLinks = (
   <div className="follow-us-links contact-single-info-container">
     <div className="contact-head">FOLLOW US</div>
     <div>
-      <Link
-        to="https://www.facebook.com/eminentid/"
+      <a
+        href="https://www.facebook.com/eminentid/"
         target="_blank"
         className="social-media-link"
+        rel="noreferrer"
       >
         Facebook
-      </Link>
-      <Link
-        to="https://www.instagram.com/eminentinteriordesign/"
+      </a>
+      <a
+        href="https://www.instagram.com/eminentinteriordesign/"
         target="_blank"
         className="social-media-link"
+        rel="noreferrer"
       >
         Instagram
-      </Link>
-      <Link
-        to="http://www.houzz.com/pro/eminentid/eminent-interior-design"
+      </a>
+      <a
+        href="http://www.houzz.com/pro/eminentid/eminent-interior-design"
         target="_blank"
         className="social-media-link"
+        rel="noreferrer"
       >
         Houzz
-      </Link>
+      </a>
     </div>
   </div>
 )
@@ -105,13 +108,14 @@ const ContactUs = () => {
         <div className="contact-single-info-container">
           <div className="contact-head">OFFICE</div>
           <div className="contact-info">{data.address.toUpperCase()}</div>
-          <Link
-            to="https://www.google.com/maps/place/11140+Hwy+55+Suite+C,+Plymouth,+MN+55441,+USA/@44.9890516,-93.4234356,17z/data=!3m1!4b1!4m5!3m4!1s0x52b33581056a5ac1:0x78b19213a5d8f875!8m2!3d44.9890516!4d-93.4212469"
+          <a
+            href="https://www.google.com/maps/place/11140+Hwy+55+Suite+C,+Plymouth,+MN+55441,+USA/@44.9890516,-93.4234356,17z/data=!3m1!4b1!4m5!3m4!1s0x52b33581056a5ac1:0x78b19213a5d8f875!8m2!3d44.9890516!4d-93.4212469"
             target="_blank"
             className="link-to-google-map"
+            rel="noreferrer"
           >
             View on Map
-          </Link>
+          </a>
         </div>
         <div className="follow-us-links-mobile">{followUsLinks}</div>
       </div>

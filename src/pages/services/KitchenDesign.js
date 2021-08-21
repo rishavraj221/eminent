@@ -12,18 +12,36 @@ const data = {
   page_head_desc:
     "Create the kitchen of your dreams with our kitchen designers' collaborative approach.  We invite you to partner with Eminent Interior Design's award-winning kitchen designers Minneapolis, MN",
   hero_image: [
-    <StaticImage src="../../assets/services_page_assets/KitchenDesign/hero1.png" />,
-    <StaticImage src="../../assets/services_page_assets/KitchenDesign/hero2.png" />,
-    <StaticImage src="../../assets/services_page_assets/KitchenDesign/hero3.png" />,
+    <StaticImage
+      src="../../assets/services_page_assets/KitchenDesign/hero1.png"
+      alt="alt"
+    />,
+    <StaticImage
+      src="../../assets/services_page_assets/KitchenDesign/hero2.png"
+      alt="alt"
+    />,
+    <StaticImage
+      src="../../assets/services_page_assets/KitchenDesign/hero3.png"
+      alt="alt"
+    />,
   ],
   head_2: ["Kitchen Designer", "Minneapolis & Surrounding Areas"],
   head_2_desc:
     "Hiring a kitchen designers in Minneapolis prior to starting a new home build or remodel eases the stress of the process for you and your family.",
   service: {
     images: [
-      <StaticImage src="../../assets/services_page_assets/KitchenDesign/1.png" />,
-      <StaticImage src="../../assets/services_page_assets/KitchenDesign/2.png" />,
-      <StaticImage src="../../assets/services_page_assets/KitchenDesign/3.png" />,
+      <StaticImage
+        src="../../assets/services_page_assets/KitchenDesign/1.png"
+        alt="alt"
+      />,
+      <StaticImage
+        src="../../assets/services_page_assets/KitchenDesign/2.png"
+        alt="alt"
+      />,
+      <StaticImage
+        src="../../assets/services_page_assets/KitchenDesign/3.png"
+        alt="alt"
+      />,
     ],
     contents: [
       {
@@ -45,9 +63,18 @@ const data = {
     ],
   },
   imageComment: [
-    <StaticImage src="../../assets/services_page_assets/KitchenDesign/ImageComment1.png" />,
-    <StaticImage src="../../assets/services_page_assets/KitchenDesign/ImageComment2.png" />,
-    <StaticImage src="../../assets/services_page_assets/KitchenDesign/ImageComment3.png" />,
+    <StaticImage
+      src="../../assets/services_page_assets/KitchenDesign/ImageComment1.png"
+      alt="alt"
+    />,
+    <StaticImage
+      src="../../assets/services_page_assets/KitchenDesign/ImageComment2.png"
+      alt="alt"
+    />,
+    <StaticImage
+      src="../../assets/services_page_assets/KitchenDesign/ImageComment3.png"
+      alt="alt"
+    />,
   ],
 }
 
@@ -81,7 +108,10 @@ const KitchenDesign = () => {
       </div>
       <div className="hero-image-container">
         <div className="hero-image-1">
-          <StaticImage src="../../assets/services_page_assets/KitchenDesign/hero1.png" />
+          <StaticImage
+            src="../../assets/services_page_assets/KitchenDesign/hero1.png"
+            alt="alt"
+          />
         </div>
         <div className="hero-image-2">{data.hero_image[1]}</div>
         <div className="hero-image-3">{data.hero_image[2]}</div>
@@ -97,7 +127,7 @@ const KitchenDesign = () => {
         </div>
         <div className="kitchen-service-content">
           {data.service.contents.map(content => (
-            <div>
+            <div key={Math.random()}>
               <div className="kitchen-service-content-head">
                 {content.head.toUpperCase()}
               </div>

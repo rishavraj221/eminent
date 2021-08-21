@@ -38,13 +38,13 @@ const data = {
   },
   owners: [
     {
-      image: <StaticImage src="../../assets/aboutUs/owner.png" />,
+      image: <StaticImage src="../../assets/aboutUs/owner.png" alt="alt" />,
       name: "Brandi Hagen",
       role: "Principal Designer / Owner",
       profilePageLink: "brandiHagen",
     },
     {
-      image: <StaticImage src="../../assets/aboutUs/katie.png" />,
+      image: <StaticImage src="../../assets/aboutUs/katie.png" alt="alt" />,
       name: "Katie Ruhberg",
       role: "Senior Designer",
       profilePageLink: "katieRuhberg",
@@ -52,34 +52,34 @@ const data = {
   ],
   teamMembers1: [
     {
-      image: <StaticImage src="../../assets/aboutUs/1.png" />,
+      image: <StaticImage src="../../assets/aboutUs/1.png" alt="alt" />,
       name: "Allison Michel",
       role: "Design Associate",
     },
     {
-      image: <StaticImage src="../../assets/aboutUs/2.png" />,
+      image: <StaticImage src="../../assets/aboutUs/2.png" alt="alt" />,
       name: "Jill Walbridge",
       role: "Design Associate",
     },
     {
-      image: <StaticImage src="../../assets/aboutUs/3.png" />,
+      image: <StaticImage src="../../assets/aboutUs/3.png" alt="alt" />,
       name: "Tara Slater",
       role: "Design Associate",
     },
   ],
   teamMembers2: [
     {
-      image: <StaticImage src="../../assets/aboutUs/4.png" />,
+      image: <StaticImage src="../../assets/aboutUs/4.png" alt="alt" />,
       name: "Marie Brown",
       role: "Design Associate",
     },
     {
-      image: <StaticImage src="../../assets/aboutUs/5.png" />,
+      image: <StaticImage src="../../assets/aboutUs/5.png" alt="alt" />,
       name: "Jeremy Hagen",
       role: "Business Manager",
     },
     {
-      image: <StaticImage src="../../assets/aboutUs/6.png" />,
+      image: <StaticImage src="../../assets/aboutUs/6.png" alt="alt" />,
       name: "Summit",
       role: "Textile Expert",
     },
@@ -98,7 +98,7 @@ const AboutUs = () => {
         <div className="about-us-head-2">About</div>
         <div className="about-us-hero-container-2">
           <div className="about-us-hero-image">
-            <StaticImage src="../../assets/aboutUs/hero1.png" />
+            <StaticImage src="../../assets/aboutUs/hero1.png" alt="alt" />
           </div>
           <div className="about-us-hero-content">
             <div className="quote-credit">
@@ -115,7 +115,12 @@ const AboutUs = () => {
             </div>
             <div>
               {data.heroContent.map(content => (
-                <div className="about-us-hero-content-quote">{content}</div>
+                <div
+                  key={Math.random()}
+                  className="about-us-hero-content-quote"
+                >
+                  {content}
+                </div>
               ))}
             </div>
           </div>
@@ -140,15 +145,17 @@ const AboutUs = () => {
           </div>
           <ul>
             {data.ourMissionContent.believeList.map(thing => (
-              <li>{`${thing.title} - ${thing.body}`}</li>
+              <li key={Math.random()}>{`${thing.title} - ${thing.body}`}</li>
             ))}
           </ul>
           {data.ourMissionContent.quote.map(thing => (
-            <div className="our-mission-quote">{thing}</div>
+            <div key={Math.random()} className="our-mission-quote">
+              {thing}
+            </div>
           ))}
         </div>
         <div className="our-mission-image">
-          <StaticImage src="../../assets/aboutUs/hero2.png" />
+          <StaticImage src="../../assets/aboutUs/hero2.png" alt="alt" />
         </div>
       </div>
       <div className="our-mission-head our-team-head">OUR TEAM</div>
@@ -158,6 +165,7 @@ const AboutUs = () => {
           <Link
             to={`/aboutUs/${owner.profilePageLink}`}
             className="our-team-owner our-team-owner-link"
+            key={Math.random()}
           >
             <div className="our-team-owner-image">{owner.image}</div>
             <div className="our-team-owner-name">
@@ -181,7 +189,7 @@ const AboutUs = () => {
       <div className="about-us-team-members-container">
         <div className="about-us-team-members-inside-container">
           {data.teamMembers1.map(member => (
-            <div className="our-team-owner">
+            <div key={Math.random()} className="our-team-owner">
               <div className="our-team-owner-image">{member.image}</div>
               <div className="our-team-owner-name">
                 {member.name.toUpperCase()}
@@ -205,7 +213,7 @@ const AboutUs = () => {
       <div className="about-us-team-members-container">
         <div className="about-us-team-members-inside-container">
           {data.teamMembers2.map(member => (
-            <div className="our-team-owner">
+            <div key={Math.random()} className="our-team-owner">
               <div className="our-team-owner-image">{member.image}</div>
               <div className="our-team-owner-name">
                 {member.name.toUpperCase()}
