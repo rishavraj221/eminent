@@ -118,6 +118,7 @@
 @media screen and (max-width: 600px) {
   .project-component-grid {
     grid-template-columns: repeat(1, 1fr);
+    width: 95%;
   }
   .project-title {
     width: 100%;
