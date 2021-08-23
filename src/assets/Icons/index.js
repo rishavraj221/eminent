@@ -9,6 +9,7 @@ import ArrRight2 from "./arrowRight2"
 import Calender from "./calender"
 import CLArr from "./carouselLeftArrow"
 import CRArr from "./carouselRightArrow"
+import Clock from "./clock"
 import Comment from "./comment"
 import Cross from "./cross"
 import Dash from "./dash"
@@ -44,6 +45,7 @@ function Icon({ name, color, size, width = "44" }) {
   if (argName === "calender") return <Calender color={color} size={size} />
   if (argName === "carleftarrow") return <CLArr color={color} size={size} />
   if (argName === "carrightarrow") return <CRArr color={color} size={size} />
+  if (argName === "clock") return <Clock color={color} size={size} />
   if (argName === "comment") return <Comment color={color} size={size} />
   if (argName === "cross") return <Cross color={color} size={size} />
   if (argName === "dash") return <Dash color={color} width={width} />

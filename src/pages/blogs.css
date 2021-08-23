@@ -1,0 +1,116 @@
+.blogs-container {
+  margin-top: 43px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.blog-container {
+  width: 80%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-image {
+  width: 576px;
+  height: 328px;
+}
+.blog-desc-container {
+  margin-left: 70px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.blog-desc-header {
+  font-family: Ivar Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 170%;
+  text-decoration: none;
+  color: #34342e;
+}
+.blog-desc-header:hover {
+  color: #34342e;
+  text-decoration: underline;
+}
+.blog-desc-desc-text {
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  margin-top: 12px;
+  opacity: 0.8;
+}
+.blog-desc-read-more-cont {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: GT America;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  margin-top: 24px;
+  color: #c19a5b;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .blog-container {
+    width: 95%;
+    margin-top: 24px;
+  }
+  .blog-image {
+    width: 42%;
+    height: 260px;
+  }
+  .blog-desc-container {
+    margin-left: 4%;
+    width: 44%;
+  }
+  .blog-desc-header {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .blog-desc-desc-text {
+    font-size: 12px;
+  }
+  .blog-desc-read-more-cont {
+    font-size: 12px;
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blogs-container {
+    margin-top: 0px;
+  }
+  .blog-container {
+    width: 95%;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .blog-image {
+    width: 100%;
+  }
+  .blog-desc-container {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .blog-desc-header {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+  .blog-desc-desc-text {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  .blog-desc-read-more-cont {
+    font-size: 12px;
+    margin-top: 16px;
+  }
+}

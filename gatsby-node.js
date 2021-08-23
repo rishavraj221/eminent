@@ -1,5 +1,4 @@
 const path = require("path")
-// const { paginate } = require('gatsby-awesome-pagination')
 
 module.exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
@@ -18,7 +17,9 @@ module.exports.onCreateNode = ({ node, actions }) => {
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const projectTemplate = path.resolve("./src/templates/project.js")
-  const res = await graphql(`
+  const blogTemplate = path.resolve("./src/templates/blog.js")
+
+  const projQuery = await graphql(`
     query {
       allPrismicProject {
         edges {
@@ -29,11 +30,31 @@ module.exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
+  const blogQuery = await graphql(`
+    query {
+      allPrismicBlogPost {
+        edges {
+          node {
+            prismicId
+          }
+        }
+      }
+    }
+  `)
 
-  res.data.allPrismicProject.edges.forEach(edge => {
+  projQuery.data.allPrismicProject.edges.forEach(edge => {
     createPage({
       component: projectTemplate,
       path: `/projects/${edge.node.prismicId}`,
+      context: {
+        slug: edge.node.prismicId,
+      },
+    })
+  })
+  blogQuery.data.allPrismicBlogPost.edges.forEach(edge => {
+    createPage({
+      component: blogTemplate,
+      path: `/blogs/${edge.node.prismicId}`,
       context: {
         slug: edge.node.prismicId,
       },

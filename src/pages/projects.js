@@ -54,7 +54,7 @@ const Projects = () => {
   }
 
   const handleIncPagination = () => {
-    if (pagePagNum[2] < Math.floor(data.length / 7) + 1) {
+    if (pagePagNum[2] < Math.floor(data.length / 6) + 1) {
       setPagePagNum([pagePagNum[1], pagePagNum[2], pagePagNum[2] + 1])
       window.scrollTo(0, 0)
     }
