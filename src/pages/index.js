@@ -192,7 +192,7 @@ const IndexPage = () => {
               image={getImage(item.slider_image.gatsbyImageData)}
               alt="alt"
             />
-            <div className="sliderHeader">{item.image_title.text}</div>
+            <div className="sliderHeader">{item.image_title.text.toUpperCase()}</div>
           </div>
         ))}
       </Carousel>
