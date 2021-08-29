@@ -24,7 +24,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
       allPrismicProject {
         edges {
           node {
-            prismicId
+            uid
           }
         }
       }
@@ -45,9 +45,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
   projQuery.data.allPrismicProject.edges.forEach(edge => {
     createPage({
       component: projectTemplate,
-      path: `/projects/${edge.node.prismicId}`,
+      path: `/projects/${edge.node.uid}`,
       context: {
-        slug: edge.node.prismicId,
+        slug: edge.node.uid,
       },
     })
   })

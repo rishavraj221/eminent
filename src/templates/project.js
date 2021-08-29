@@ -9,8 +9,8 @@ import Icon from "../assets/Icons"
 import "./project.css"
 
 export const query = graphql`
-  query ($slug: ID) {
-    prismicProject(prismicId: { eq: $slug }) {
+  query ($slug: String) {
+    prismicProject(uid: { eq: $slug }) {
       data {
         author_description
         author_name

@@ -7,6 +7,7 @@ import { TextField } from "formik-material-ui"
 import { MuiPickersUtilsProvider } from "@material-ui/pickers"
 import DateFnsUtils from "@date-io/date-fns"
 import * as Yup from "yup"
+import emailjs from "emailjs-com"
 
 import Head from "../components/head"
 import Layout from "../components/layout"
@@ -135,9 +136,21 @@ const ContactUs = () => {
             setSubmitting(false)
             try {
               setSubmitting(true)
-              alert(JSON.stringify(values, undefined, 2))
+              await emailjs.send(
+                process.env.EMAILJS_SERVICE_ID,
+                process.env.EMAILJS_TEMPLATE_ID,
+                {
+                  from_name: values.fullName,
+                  to_name: "EMINENT INTERIOR DESIGNER",
+                  message: values.message,
+                  phone_number: values.phoneNumber,
+                  email: values.email,
+                },
+                process.env.EMAILJS_USER_ID
+              )
+              setSubmitting(false)
             } catch (ex) {
-              alert(ex)
+              alert("Something went wrong!")
             }
           }}
         >

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
@@ -20,12 +20,14 @@ const tabs = [
 ]
 
 const Projects = () => {
-  const data = useStaticQuery(graphql`
+  const [data, setData] = useState([])
+  const [tabIndex, setTabIndex] = useState(0)
+
+  const query = useStaticQuery(graphql`
     query {
-      allPrismicProject(sort: { order: DESC, fields: data___posted_date }) {
+      allPrismicProject(sort: { fields: data___posted_date, order: DESC }) {
         edges {
           node {
-            prismicId
             data {
               project_title {
                 text
@@ -37,11 +39,16 @@ const Projects = () => {
                 gatsbyImageData
               }
             }
+            uid
           }
         }
       }
     }
   `).allPrismicProject.edges
+
+  useEffect(() => {
+    setData(query)
+  }, [query])
 
   const [pagePagNum, setPagePagNum] = useState([1, 2, 3])
   const [currentPagIndex, setCurrPagIndex] = useState(0)
@@ -60,6 +67,13 @@ const Projects = () => {
     }
   }
 
+  const handleTabChange = index => {
+    setTabIndex(index)
+    if (index !== 0)
+      setData(query.filter(q => q.node.data.project_type === tabs[index]))
+    else setData(query)
+  }
+
   return (
     <Layout>
       <Head title="Projects" />
@@ -71,8 +85,19 @@ const Projects = () => {
       </div>
       <div className="project-tabs-container">
         <div className="project-tabs">
-          {tabs.map(tab => (
-            <div key={Math.random()} className="project-tab">
+          {tabs.map((tab, index) => (
+            <div
+              onClick={() => handleTabChange(index)}
+              key={Math.random()}
+              className="project-tab"
+              role="button"
+              tabIndex={0}
+              onKeyUp={() => <div></div>}
+              style={{
+                color: tabIndex === index ? "#C19A5B" : "rgba(52, 52, 46, 1)",
+                opacity: tabIndex === index ? 1 : 0.5,
+              }}
+            >
               {tab}
             </div>
           ))}
@@ -89,8 +114,7 @@ const Projects = () => {
             >
               <Link
                 to={`/projects/${
-                  data[(pagePagNum[currentPagIndex] - 1) * 6 + index].node
-                    .prismicId
+                  data[(pagePagNum[currentPagIndex] - 1) * 6 + index].node.uid
                 }`}
                 className="gallery-item project-item"
               >

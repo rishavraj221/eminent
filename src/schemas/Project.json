@@ -1,8 +1,24 @@
 {
   "Main": {
-    "project_type": {
-      "type": "Text",
+    "uid": {
+      "type": "UID",
       "config": {
+        "label": "seo_id"
+      }
+    },
+    "project_type": {
+      "type": "Select",
+      "config": {
+        "options": [
+          "Living",
+          "Kitchen",
+          "Bathroom",
+          "Interior",
+          "Minimalist",
+          "Modern",
+          "Traditional",
+          "Contemporary"
+        ],
         "label": "Project Type"
       }
     },
