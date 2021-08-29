@@ -6,7 +6,7 @@ import { TextField } from "formik-material-ui"
 import { MuiPickersUtilsProvider } from "@material-ui/pickers"
 import DateFnsUtils from "@date-io/date-fns"
 import * as Yup from "yup"
-import emailjs from "emailjs-com"
+import axios from "axios"
 
 import Icon from "../assets/Icons"
 import "./contact.css"
@@ -80,17 +80,21 @@ const Footer = () => {
             setSubmitting(false)
             try {
               setSubmitting(true)
-              await emailjs.send(
-                process.env.EMAILJS_SERVICE_ID,
-                process.env.EMAILJS_SERVICE_TEMPLATE_ID,
-                {
+              const data = {
+                service_id: process.env.EMAILJS_SERVICE_ID,
+                template_id: process.env.EMAILJS_SERVICE_TEMPLATE_ID,
+                user_id: process.env.EMAILJS_USER_ID,
+                template_params: {
                   from_name: values.fullName,
-                  to_name: "EMINENT INTERIOR DESIGNER",
+                  to_name: "Eminent Interior Designer",
                   service: values.service,
                   phone_number: values.phoneNumber,
                   email: values.email,
                 },
-                process.env.EMAILJS_USER_ID
+              }
+              await axios.post(
+                "https://api.emailjs.com/api/v1.0/email/send",
+                data
               )
               setSubmitting(false)
               alert(
