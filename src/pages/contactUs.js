@@ -156,6 +156,7 @@ const ContactUs = () => {
               alert("Thank you for your message, we will get to you soon...")
             } catch (ex) {
               alert("Something went wrong!")
+              console.log(ex)
             }
           }}
         >
