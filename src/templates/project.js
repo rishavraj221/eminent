@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { graphql, navigate } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Carousel } from "react-responsive-carousel"
 
@@ -122,8 +122,8 @@ const Project = props => {
   return (
     <Layout>
       <Head title={data.project_title.text} />
-      <div
-        onClick={() => navigate(-1)}
+      <Link
+        to="/projects"
         type="button"
         role="button"
         tabIndex={0}
@@ -132,7 +132,7 @@ const Project = props => {
       >
         <Icon name="arrowLeft2" />
         <div>Back to Projects</div>
-      </div>
+      </Link>
       {data.project_type && (
         <div className="project-type">{data.project_type.toUpperCase()}</div>
       )}

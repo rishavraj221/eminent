@@ -6,6 +6,7 @@ import { TextField } from "formik-material-ui"
 import { MuiPickersUtilsProvider } from "@material-ui/pickers"
 import DateFnsUtils from "@date-io/date-fns"
 import * as Yup from "yup"
+import emailjs from "emailjs-com"
 
 import Icon from "../assets/Icons"
 import "./contact.css"
@@ -28,19 +29,23 @@ const data = {
 const services = [
   {
     value: "service-1",
-    label: "Service 1",
+    label: "Interior Design",
   },
   {
     value: "service-2",
-    label: "Service 2",
+    label: "Kitchen Design",
   },
   {
     value: "service-3",
-    label: "Service 3",
+    label: "Bath Design",
   },
   {
     value: "service-4",
-    label: "Service 4",
+    label: "Construction Planning",
+  },
+  {
+    value: "service-4",
+    label: "Furnishings",
   },
 ]
 
@@ -75,7 +80,22 @@ const Footer = () => {
             setSubmitting(false)
             try {
               setSubmitting(true)
-              alert(JSON.stringify(values, undefined, 2))
+              await emailjs.send(
+                process.env.EMAILJS_SERVICE_ID,
+                process.env.EMAILJS_SERVICE_TEMPLATE_ID,
+                {
+                  from_name: values.fullName,
+                  to_name: "EMINENT INTERIOR DESIGNER",
+                  service: values.service,
+                  phone_number: values.phoneNumber,
+                  email: values.email,
+                },
+                process.env.EMAILJS_USER_ID
+              )
+              setSubmitting(false)
+              alert(
+                "Hurray! We have received your request, we will contact you soon..."
+              )
             } catch (ex) {
               alert(ex)
             }
@@ -152,7 +172,7 @@ const Footer = () => {
                     Select a Service
                   </MenuItem>
                   {services.map(option => (
-                    <MenuItem key={option.value} value={option.value}>
+                    <MenuItem key={option.value} value={option.label}>
                       {option.label}
                     </MenuItem>
                   ))}
