@@ -169,10 +169,12 @@
   margin-left: 10%;
   margin-top: -150px;
   margin-bottom: 150px;
+  width: 80%;
 }
 .about-image-2 {
   margin-left: -10%;
   margin-right: 10%;
+  width: 30%;
 }
 
 .about-content {
@@ -548,12 +550,12 @@
   .services-gallery-container-outer {
     overflow: scroll;
     width: 100%;
+    justify-content: flex-start;
   }
   .services-gallery {
     display: flex;
     width: 1250px;
-    padding-left: 480px;
-    padding-right: 30px;
+    padding: 0px 20px;
   }
   .services-gallery-item {
     width: 250px;
@@ -573,6 +575,7 @@
   }
   .about-image-1 {
     margin-right: 10%;
+    width: 100%;
   }
   .about-head {
     font-size: 35px;

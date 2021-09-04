@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Carousel } from "react-responsive-carousel"
 import { default as Carousel2 } from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
@@ -43,12 +42,18 @@ const IndexPage = () => {
                   text
                 }
                 slider_image {
-                  gatsbyImageData
+                  fluid {
+                    srcSetWebp
+                    srcWebp
+                  }
                 }
               }
               what_we_offer {
                 service_image {
-                  gatsbyImageData
+                  fluid {
+                    srcSetWebp
+                    srcWebp
+                  }
                 }
                 service_title {
                   text
@@ -58,16 +63,25 @@ const IndexPage = () => {
               }
               about_eminent_desc {
                 image_1 {
-                  gatsbyImageData
+                  fluid {
+                    srcSetWebp
+                    srcWebp
+                  }
                 }
                 image_2 {
-                  gatsbyImageData
+                  fluid {
+                    srcSetWebp
+                    srcWebp
+                  }
                 }
                 description
               }
               authors {
                 image {
-                  gatsbyImageData
+                  fluid {
+                    srcSetWebp
+                    srcWebp
+                  }
                 }
                 job_type
                 name {
@@ -78,7 +92,10 @@ const IndexPage = () => {
               }
               team_members {
                 image {
-                  gatsbyImageData
+                  fluid {
+                    srcSetWebp
+                    srcWebp
+                  }
                 }
                 full_name {
                   text
@@ -90,7 +107,10 @@ const IndexPage = () => {
               }
               featured_projects {
                 image {
-                  gatsbyImageData
+                  fluid {
+                    srcSetWebp
+                    srcWebp
+                  }
                 }
                 project_name {
                   text
@@ -187,9 +207,10 @@ const IndexPage = () => {
               height: "100%",
             }}
           >
-            <GatsbyImage
+            <img
               className="slider-image"
-              image={getImage(item.slider_image.gatsbyImageData)}
+              srcSet={item.slider_image.fluid.srcSetWebp}
+              src={item.slider_image.fluid.srcWebp}
               alt="alt"
             />
             <div className="sliderHeader">
@@ -242,8 +263,9 @@ const IndexPage = () => {
                 to={`/services/${offer.link_to}`}
                 className="services-gallery-item w-1"
               >
-                <GatsbyImage
-                  image={getImage(offer.service_image.gatsbyImageData)}
+                <img
+                  srcSet={offer.service_image.fluid.srcSetWebp}
+                  src={offer.service_image.fluid.srcWebp}
                   alt="alt"
                 />
                 <div className="service-image-title">
@@ -276,14 +298,16 @@ const IndexPage = () => {
       </Link>
       <div className="about">
         <div className="about-images">
-          <GatsbyImage
+          <img
             className="about-image-1"
-            image={getImage(data.about_eminent_desc[0].image_1.gatsbyImageData)}
+            srcSet={data.about_eminent_desc[0].image_1.fluid.srcSetWebp}
+            src={data.about_eminent_desc[0].image_1.fluid.srcWebp}
             alt="alt"
           />
-          <GatsbyImage
+          <img
             className="about-image-2"
-            image={getImage(data.about_eminent_desc[0].image_2.gatsbyImageData)}
+            srcSet={data.about_eminent_desc[0].image_2.fluid.srcSetWebp}
+            src={data.about_eminent_desc[0].image_2.fluid.srcWebp}
             alt="alt"
           />
         </div>
@@ -325,8 +349,10 @@ const IndexPage = () => {
             </Link>
           </div>
           <div className="author-image">
-            <GatsbyImage
-              image={getImage(author.image.gatsbyImageData)}
+            <img
+              className="author-img"
+              srcSet={author.image.fluid.srcSetWebp}
+              src={author.image.fluid.srcWebp}
               alt="alt"
             />
           </div>
@@ -342,8 +368,9 @@ const IndexPage = () => {
           <div key={Math.random()} className="team-member">
             <div>
               <div className="team-member-image">
-                <GatsbyImage
-                  image={getImage(team_member.image.gatsbyImageData)}
+                <img
+                  srcSet={team_member.image.fluid.srcSetWebp}
+                  src={team_member.image.fluid.srcWebp}
                   alt="alt"
                 />
               </div>
@@ -362,8 +389,9 @@ const IndexPage = () => {
           <div key={Math.random()} className="team-member">
             <div>
               <div className="team-member-image">
-                <GatsbyImage
-                  image={getImage(team_member.image.gatsbyImageData)}
+                <img
+                  srcSet={team_member.image.fluid.srcSetWebp}
+                  src={team_member.image.fluid.srcWebp}
                   alt="alt"
                 />
               </div>
@@ -436,11 +464,10 @@ const IndexPage = () => {
         <div className="featured-projects">
           <div>
             <div className="wide-project">
-              <GatsbyImage
+              <img
                 className="featured-project-image"
-                image={getImage(
-                  data.featured_projects[0].image.gatsbyImageData
-                )}
+                srcSet={data.featured_projects[0].image.fluid.srcSetWebp}
+                src={data.featured_projects[0].image.fluid.srcWebp}
                 alt="alt"
               />
               <div className="featured-project-title">
@@ -453,11 +480,10 @@ const IndexPage = () => {
             </div>
             <div style={{ width: 24 }}></div>
             <div className="sqr-project">
-              <GatsbyImage
+              <img
                 className="featured-project-image"
-                image={getImage(
-                  data.featured_projects[1].image.gatsbyImageData
-                )}
+                srcSet={data.featured_projects[1].image.fluid.srcSetWebp}
+                src={data.featured_projects[1].image.fluid.srcWebp}
                 alt="alt"
               />
               <div className="featured-project-title">
@@ -471,11 +497,10 @@ const IndexPage = () => {
           </div>
           <div>
             <div className="sqr-project">
-              <GatsbyImage
+              <img
                 className="featured-project-image"
-                image={getImage(
-                  data.featured_projects[2].image.gatsbyImageData
-                )}
+                srcSet={data.featured_projects[2].image.fluid.srcSetWebp}
+                src={data.featured_projects[1].image.fluid.srcWebp}
                 alt="alt"
               />
               <div className="featured-project-title">
@@ -488,11 +513,10 @@ const IndexPage = () => {
             </div>
             <div style={{ width: 24 }}></div>
             <div className="wide-project">
-              <GatsbyImage
+              <img
                 className="featured-project-image"
-                image={getImage(
-                  data.featured_projects[3].image.gatsbyImageData
-                )}
+                srcSet={data.featured_projects[3].image.fluid.srcSetWebp}
+                src={data.featured_projects[1].image.fluid.srcWebp}
                 alt="alt"
               />
               <div className="featured-project-title">
@@ -541,9 +565,10 @@ const IndexPage = () => {
               <div key={Math.random()} className="team-member">
                 <div>
                   <div>
-                    <GatsbyImage
+                    <img
                       className="team-member-image"
-                      image={getImage(project.image.gatsbyImageData)}
+                      srcSet={project.image.fluid.srcSetWebp}
+                      src={project.image.fluid.srcWebp}
                       alt="alt"
                     />
                   </div>

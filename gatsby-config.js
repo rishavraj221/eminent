@@ -45,5 +45,14 @@ module.exports = {
       },
     },
     "gatsby-plugin-image",
+    {
+      resolve: `gatsby-source-cloudinary`,
+      options: {
+        cloudName: "dcj1cpfzd",
+        apiKey: "113794351864751",
+        apiSecret: "jz6XODhXqi0jO1_QQ56LHWOPLSQ",
+        resourceType: `image`,
+      },
+    },
   ],
 }

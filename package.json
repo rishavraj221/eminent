@@ -6,7 +6,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "env-cmd -f .env.development gatsby develop",
+    "develop": "env-cmd -f .env gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -33,6 +33,7 @@
     "gatsby-plugin-sharp": "^3.10.2",
     "gatsby-remark-images": "^5.7.0",
     "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-source-cloudinary": "^0.1.14",
     "gatsby-source-filesystem": "^3.10.0",
     "gatsby-source-prismic": "^4.0.2",
     "gatsby-source-prismic-graphql": "^3.6.2",

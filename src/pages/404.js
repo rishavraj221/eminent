@@ -13,6 +13,7 @@ const NotFound = () => {
         <div className="about-us-head au-head-3">FOUND</div>
         <div className="about-us-head-2">Error 404</div>
       </div>
+
       <div className="gallery-margin-top"></div>
     </Layout>
   )
